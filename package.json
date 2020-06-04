@@ -30,7 +30,7 @@
     "classnames": "^2.2.6",
     "date-fns": "^2.9.0",
     "font-awesome": "^4.7.0",
-    "next": "9.3.0",
+    "next": "9.3.2",
     "node-sass": "^4.13.1",
     "postcss-css-variables": "^0.14.0",
     "query-string": "^6.10.1",
