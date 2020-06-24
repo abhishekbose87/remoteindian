@@ -37,38 +37,50 @@ const PageFooter = () => (
             </p>
           </div>
         </div>
-        <div className="site-contribute foot-col col-xs-12 col-md-6">
+        <div className="site-contribute foot-col col-xs-12 col-md-2">
+          <ul>
+            <li className="foot-header">Contribute</li>
+            <li>
+              <a href={siteConfig.url.addGuide} target="_blank">
+                Write a Guide
+              </a>
+            </li>
+            <li>
+              <a href={siteConfig.url.addInterview} target="_blank">
+                Submit a Interview
+              </a>
+            </li>
+            <li>
+              <a href={siteConfig.url.repo} target="_blank">
+                Codebase
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="site-contribute foot-col col-xs-12 col-md-4">
           <ul>
             <li className="foot-header">Credits</li>
             <li>
-              ❤️ This site has been heavily inspired by{" "}
+              ❤️&nbsp;&nbsp;This site has been heavily inspired by{" "}
               <a href="https://roadmap.sh" target="_blank">
                 Roadmap.sh
               </a>
             </li>
             <li>
-              🤗 The information present in the guides is courtesy{" "}
+              🤗&nbsp;&nbsp;The information present in the guides is courtesy{" "}
               <a href="https://remoteindian.com/#signup" target="_blank">
                 our slack community
               </a>
             </li>
             <li>
-              🙌 Last but not the least, Thank you {" "}
+              🙌&nbsp;&nbsp;Last but not the least, Thank you{" "}
               <a href="https://remoteindian.com/thanks" target="_blank">
-                patrons!
-              </a>
+                patrons
+              </a> for your support!
             </li>
           </ul>
         </div>
-        {/* <div className="site-contribute foot-col col-12 col-sm-4 col-lg-2">
-          <ul>
-            <li className='foot-header'>Contribute</li>
-            <li><a href={ siteConfig.url.addGuide } target="_blank">Write a Guide</a></li>
-            <li><a href={ siteConfig.url.addRoadmap } target="_blank">Submit a Roadmap</a></li>
-            <li><a href={ siteConfig.url.addResources } target="_blank">Add resources</a></li>
-            <li><a href={ siteConfig.url.repo } target="_blank">Codebase</a></li>
-          </ul>
-        </div> */}
+
         {/* <div className="site-learn foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className="foot-header">Learn</li>
