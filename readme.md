@@ -32,7 +32,7 @@ yarn dev
 ## Contributions
 
 * Add new guides
-* Suggest changes to existing guides
+* Suggest changes to the existing guides
 * Write an interview
 * Improve the site's codebase
 * Write tests
