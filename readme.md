@@ -31,8 +31,8 @@ yarn dev
 
 ## Contributions
 
-* Add new guide
-* Suggest changes to existing guide
+* Add new guides
+* Suggest changes to the existing guides
 * Write an interview
 * Improve the site's codebase
 * Write tests
