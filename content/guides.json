@@ -30,6 +30,26 @@
     "createdAt": "2020-03-14T15:48:21.191Z"
   },
   {
+    "title": "🎧 Music for productivity",
+    "description": "Switch your mood with the right track.",
+    "url": "/guides/music-for-productivity",
+    "fileName": "music-for-productivity",
+    "featured": true,
+    "author": "avi87",
+    "updatedAt": "2020-07-20T15:48:21.191Z",
+    "createdAt": "2020-07-20T15:48:21.191Z"
+  },
+  {
+    "title": "⚡ Productive from home",
+    "description": "How to make 'work from home' work for you",
+    "url": "/guides/work-from-home",
+    "fileName": "work-from-home",
+    "featured": true,
+    "author": "avi87",
+    "updatedAt": "2020-07-20T15:48:21.191Z",
+    "createdAt": "2020-07-20T15:48:21.191Z"
+  },
+  {
     "title": "How to get into Toptal",
     "description": "Or any of the popular places to get gigs",
     "url": "/guides/toptal",
