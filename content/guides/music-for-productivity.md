@@ -40,7 +40,6 @@ Also love that I can use default music player controls on my keyboard ⏭
 *   [Songs to test the headphones with](https://open.spotify.com/playlist/37i9dQZF1DWZtZ8vUCzche) (Tejas)
 *   [Programming playlist](https://open.spotify.com/playlist/2mtlhuFVOFMn6Ho3JmrLc2) (Tejas)
 
-
 ### 3/ Youtube
 
 It has much more options than Spotify but I inadvertently tend to consume videos which are not that productive 😅
@@ -58,8 +57,20 @@ It has much more options than Spotify but I inadvertently tend to consume videos
 
 Btw did you know there was a [desktop app](https://ytmdesktop.app/) for Youtube 🤔
 
+### 4/ Apple Music
 
-### 4/ Other notable mentions
+For everybody who ❤️ all things Apple!
+
+* [WWDC 20 Coding Energy](https://music.apple.com/in/playlist/wwdc20-coding-energy/pl.241ba81f1abb4c29b54c9fa34e17aeef)
+* [WWDC 20 Coding Focus](https://music.apple.com/in/playlist/wwdc20-coding-focus/pl.f9bb948b1ecd4954b7aecad00b825c59)
+* [Work + Ambient](https://music.apple.com/in/playlist/work-ambient/pl.u-e98lkymuzPqV2gv)
+* [Pure Focus](https://music.apple.com/in/playlist/pure-focus/pl.dbd712beded846dca273d5d3259d28aa)
+* [Pure Ambient](https://music.apple.com/in/playlist/pure-ambient/pl.a9bd89e7b22e45cbaac40b58c9d3d09b)
+* [Study Beats](https://music.apple.com/in/playlist/study-beats/pl.a4e197979fc74b2a91b3cdf869f12aa5)
+* [Acoustic Hits](https://music.apple.com/in/playlist/acoustic-hits/pl.522581bf8c264bafa742e75df9772078)
+
+
+### 5/ Other notable mentions
 
 📻 RadioTunes
 
