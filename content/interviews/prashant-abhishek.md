@@ -1,6 +1,6 @@
 > [AltCampus](https://altcampus.io/) founder, Geek who loves community and building products
 
-##  ⚡️ Quickfire Round
+## ⚡️ Quickfire Round
 
 ### Where is your current homebase ?
 
@@ -18,7 +18,7 @@ Bali, Indonesia and Chiang Mai, Thailand
 
 Information Technology
 
-### What is your family/friends reaction to remote working on a scale of 1-5 (where 1-negative and 5-very positive)
+### What is your family/friends reaction to remote working on a scale of 1-5 (where 1-negative and 5-very positive)?
 
 3.5
 
@@ -38,7 +38,7 @@ Freedom. Thanks to internet, we can all sorts of digital work from anywhere. I d
 
 Again freedom and working on what matters the most to me.
 
-* * *
+---
 
 ## 🔥 Fireside Chat
 
@@ -46,7 +46,7 @@ Again freedom and working on what matters the most to me.
 
 It goes back to my school time. My friends and I were in school and we had this dream that we would live in hills and have fun !! We had been to a few mountaineering camps and desired the romantic idea of living in hills. However we had no plans of how we could actually do that.
 
-\[caption id="attachment\_528" align="aligncenter" width="1024"\]![Beautiful home in Dharamshala](/interviews/dharamshala-1024x768.jpeg) Beautiful home in Dharamshala\[/caption\]
+\[caption id="attachment_528" align="aligncenter" width="1024"\]![Beautiful home in Dharamshala](/interviews/dharamshala-1024x768.jpeg) Beautiful home in Dharamshala\[/caption\]
 
 Later, when I was Bangalore doing a full time job, I felt quite frustrated with the city life - crowd, traffic etc. I started thinking of moving to some place remote. I called my school friends and guess what - they were all in.
 
@@ -62,7 +62,7 @@ It stems from my personal journey. I dropped out of college, primarily because I
 
 So yeah the motivation behind AltCampus is to build an alternative platform that my younger self could have gone to. In broader sense, I feel worried about the quality of software developers we as a nation produce. I feel there is a need for a skill-based training program that would give opportunity to young people and it should be super accessible, hence no upfront payment model. Nothing gives me more satisfaction than seeing people grow.
 
-\[caption id="attachment\_529" align="aligncenter" width="1024"\]![Peer learning at AltCampus](/interviews/alt_campus_2-1024x769.jpg) Peer learning at AltCampus\[/caption\]
+\[caption id="attachment_529" align="aligncenter" width="1024"\]![Peer learning at AltCampus](/interviews/alt_campus_2-1024x769.jpg) Peer learning at AltCampus\[/caption\]
 
 ### What advice would you give to someone who wants to lead a similar lifestyle ?
 
