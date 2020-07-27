@@ -18,7 +18,7 @@ Bali, Indonesia and Chiang Mai, Thailand
 
 Information Technology
 
-### What is your family/friends reaction to remote working on a scale of 1-5 (where 1-negative and 5-very positive)
+### What is your family/friends reaction to remote working on a scale of 1-5 (where 1-negative and 5-very positive)?
 
 3.5
 
