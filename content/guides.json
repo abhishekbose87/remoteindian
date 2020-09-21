@@ -1,6 +1,6 @@
 [
   {
-    "title": "How to get paid in dollars",
+    "title": "💵 How to get paid in dollars",
     "description": "FAQ for contractor working for a US company",
     "url": "/guides/us-contractor",
     "fileName": "us-contractor",
@@ -10,7 +10,7 @@
     "createdAt": "2020-03-14T15:48:21.191Z"
   },
   {
-    "title": "How to file your taxes",
+    "title": "💸 How to file your taxes",
     "description": "Pay your fair share to support local government",
     "url": "/guides/tax-guide",
     "fileName": "tax-guide",
@@ -30,7 +30,17 @@
     "createdAt": "2020-09-17T15:48:21.191Z"
   },
   {
-    "title": "Getting your insurance right",
+    "title": "🔝 Why and How of Toptal",
+    "description": "Why Toptal is a highly rated freelance marketplace and how to get in?",
+    "url": "/guides/toptal",
+    "fileName": "toptal",
+    "featured": true,
+    "author": "avi87",
+    "updatedAt": "2020-09-21T15:48:21.191Z",
+    "createdAt": "2020-09-21T15:48:21.191Z"
+  },
+  {
+    "title": "✅ Getting your insurance right",
     "description": "Don't go bankrupt in one accident.",
     "url": "/guides/insurance",
     "fileName": "insurance",
@@ -40,7 +50,7 @@
     "createdAt": "2020-03-14T15:48:21.191Z"
   },
   {
-    "title": "🎧 Music for productivity",
+    "title": "🎧  Music for productivity",
     "description": "Switch your mood with the right track.",
     "url": "/guides/music-for-productivity",
     "fileName": "music-for-productivity",
@@ -60,7 +70,7 @@
     "createdAt": "2020-07-20T15:48:21.191Z"
   },
   {
-    "title": "⚖️ Risk-Taking and Ergodicity",
+    "title": "⚖️  Risk-Taking and Ergodicity",
     "description": "\"In order to succeed, you must first survive.\" - Warren Buffet",
     "url": "/guides/risk-taking",
     "fileName": "risk-taking",
@@ -68,17 +78,6 @@
     "author": "avi87",
     "updatedAt": "2020-07-27T15:48:21.191Z",
     "createdAt": "2020-07-27T15:48:21.191Z"
-  },
-  {
-    "title": "How to get into Toptal",
-    "description": "Or any of the popular places to get gigs",
-    "url": "/guides/toptal",
-    "fileName": "toptal",
-    "featured": false,
-    "author": "avi87",
-    "upcoming": true,
-    "updatedAt": "2020-03-14T15:48:21.191Z",
-    "createdAt": "2020-03-14T15:48:21.191Z"
   },
   {
     "title": "How to stay organised while working remotely",
