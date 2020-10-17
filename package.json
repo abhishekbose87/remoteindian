@@ -40,10 +40,13 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "babel-plugin-styled-components": "^1.10.6",
     "gh-pages": "^2.2.0",
     "glob": "^7.1.6",
     "jest": "^24.9.0",
-    "serve": "^11.3.0"
+    "postcss-preset-env": "^6.7.0",
+    "serve": "^11.3.0",
+    "tailwindcss": "^1.9.3"
   }
 }
