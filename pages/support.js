@@ -3,14 +3,18 @@ import SupporterSection from "components/supporter";
 export default function Support() {
   return (
     <div>
-      <div class="grid justify-center text-center bg-gray-400 p-4">
+      <div class="grid justify-center text-center bg-gray-200 p-10  items-center">
+        <svg class="heart mx-auto my-3" viewBox="0 0 32 29.6">
+          <path
+            d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
+          />
+        </svg>
         <div class="max-w-lg">
           <h3>A big Thank You to all our supporters 🙏</h3>
           <p>
             Your contribution keeps the RemoteIndian project independent and
-            inclusive for everyone. Companies interested in sponsoring the
-            RemoteIndian project, can reach out here! Individuals can support us
-            via Patreon and RazorPay subscription links 🙌
+            inclusive for everyone 🙌
           </p>
         </div>
       </div>
