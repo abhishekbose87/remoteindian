@@ -1,4 +1,4 @@
-import supporters from "content/supporters";
+import SupporterSection from "components/supporter";
 
 export default function Support() {
   return (
@@ -16,8 +16,8 @@ export default function Support() {
       </div>
 
       {/* Sponsors */}
-      <div class="section grid grid-flow-row gap-4 container">
-        <h2 class="">Top Sponsor</h2>
+      <div class="section grid gap-4 container justify-items-center m-20">
+        <h2 class="">🌟 Sponsors</h2>
         <div class="grid md:grid-cols-2 gap-3 items-start">
           <div>
             <img src="https://via.placeholder.com/552x270" />
@@ -38,93 +38,30 @@ export default function Support() {
         <div class="bg-gray-200 row-start-2 row-end-5 col-span-full w-full"></div>
 
         {/* Top Supporter */}
-        <div class="row-start-1 row-end-3 container col-span-full section grid gap-4 justify-items-center">
-          <h2 class="">Top Supporter</h2>
-          <div class="grid md:grid-cols-6 sm:grid-cols-2 gap-3 align-middle justify-center items-stretch">
-            {supporters.map((supporter) => (
-              <div class="supporter grid gap-1 justify-items-center items-center">
-                <div class="">
-                  <img
-                    class="rounded-full"
-                    src="https://via.placeholder.com/104x104"
-                  />
-                </div>
-                <h4 class="text-sm">{supporter.name}</h4>
-                <p class="self-end">{supporter.url}</p>
-              </div>
-            ))}
-          </div>
+        <div class="row-start-1 row-end-3 container col-span-full">
+          <SupporterSection title="🥇 Top Supporters" file="top_supporters" />
         </div>
 
         {/* Others */}
         <div class="row-start-3 row-end-4 grid col-span-full container">
           {/* Supporter */}
-          <div class="section grid gap-4 justify-items-center">
-            <h2 class="">Supporter</h2>
-            <div class="grid md:grid-cols-6 sm:grid-cols-2 gap-3 align-middle justify-center items-stretch">
-              {supporters.map((supporter) => (
-                <div class="supporter grid gap-1 justify-items-center">
-                  <div class="">
-                    <img
-                      class="rounded-full"
-                      src="https://via.placeholder.com/104x104"
-                    />
-                  </div>
-                  <h4 class="text-sm text-center">{supporter.name}</h4>
-                  <p class="self-end">{supporter.url}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <SupporterSection title="🙌  Supporters" file="supporters" />
 
           {/* Contributor */}
-          <div class="section grid gap-4 justify-items-center">
-            <h2 class="">Contributor</h2>
-            <div class="grid md:grid-cols-6 sm:grid-cols-2 gap-3 align-middle justify-center items-stretch">
-              {supporters.map((supporter) => (
-                <div class="supporter grid gap-1 justify-items-center">
-                  <div class="">
-                    <img
-                      class="rounded-full"
-                      src="https://via.placeholder.com/104x104"
-                    />
-                  </div>
-                  <h4 class="text-sm text-center">{supporter.name}</h4>
-                  <p class="self-end">{supporter.url}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <SupporterSection title="🥤 Contributors" file="contributors" />
 
           {/* Buy me a Coffee */}
-          <div class="section grid gap-4 justify-items-center">
-            <h2 class="">Buy me a Coffee</h2>
-            <div class="grid md:grid-cols-6 sm:grid-cols-2 gap-3 align-middle justify-center items-stretch">
-              {supporters.map((supporter) => (
-                <div class="supporter grid gap-1 justify-items-center">
-                  <div class="">
-                    <img
-                      class="rounded-full"
-                      src="https://via.placeholder.com/104x104"
-                    />
-                  </div>
-                  <h4 class="text-sm text-center">{supporter.name}</h4>
-                  <p class="self-end">{supporter.url}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <SupporterSection title="☕️ Buy me a Coffee" file="bmc" />
         </div>
 
         {/* Footer */}
-        <div class="row-start-4 row-end-6 col-span-full  max-w-xl text-center bg-black text-white p-10 m-10">
-          <h3>A big Thank You to all our supporters 🙏</h3>
-          <p>
-            Your contribution keeps the RemoteIndian project independent and
-            inclusive for everyone. Companies interested in sponsoring the
-            RemoteIndian project, can reach out here! Individuals can support us
-            via Patreon and RazorPay subscription links 🙌
-          </p>
+        <div class="row-start-4 row-end-6 col-span-full  max-w-xl text-center bg-black text-white p-10 m-10 mt-20">
+          <h3>Like what we are doing?</h3>
+          <a href="/signup">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">
+              Come join us!
+            </button>
+          </a>
         </div>
 
         {/* End  */}
