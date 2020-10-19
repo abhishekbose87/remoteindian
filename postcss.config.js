@@ -19,11 +19,11 @@ const purgecss = [
 ];
 
 module.exports = {
-  plugins: {
-    'postcss-css-variables': {},
-    'autoprefixer': {},
-    'tailwindcss': {},
-    'postcss-preset-env': {},
+  plugins: [
+    'postcss-css-variables',
+    'autoprefixer',
+    'tailwindcss',
     process.env.NODE_ENV === "production" ? purgecss : undefined,
-  },
+    'postcss-preset-env',
+  ]
 };
