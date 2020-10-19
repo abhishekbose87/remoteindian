@@ -4,17 +4,17 @@ const SupporterSection = ({title, file}) => {
     return (
       <div class="mt-20 grid gap-4 justify-items-center">
         <h2 class="">{title}</h2>
-        <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-3 align-middle justify-center items-stretch">
+        <div class="flex justify-center flex-wrap">
           {supporters.map((supporter) => (
-            <div class="max-w-sm rounded overflow-hidden shadow-lg supporter grid justify-items-center items-center grid-rows-auto z-10 bg-white">
+            <div class="rounded overflow-hidden shadow-lg bg-white m-3 sm:w-1/3 md:w-1/6 grid">
               <img
                 class="rounded-full mx-auto mt-4"
                 src="https://via.placeholder.com/104x104"
               />
-              <div class="font-bold text-xl my-2 px-2 text-center">
-                <h4 class="text-sm">{supporter.name}</h4>
+              <div class="font-bold my-2 px-2 text-center text-gray-900">
+                {supporter.name}
               </div>
-                <p class="text-gray-700 text-base">{supporter.url}</p>
+              <p class="text-gray-700 text-base text-center self-end">{supporter.url}</p>
             </div>
           ))}
         </div>

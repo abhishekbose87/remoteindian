@@ -18,18 +18,16 @@ export default function Support() {
       {/* Sponsors */}
       <div class="section grid gap-4 container justify-items-center m-20">
         <h2 class="">🌟 Sponsors</h2>
-        <div class="grid md:grid-cols-2 gap-3 items-start">
-          <div>
-            <img src="https://via.placeholder.com/552x270" />
-          </div>
-          <div class="grid md:text-left">
+        <div class="grid md:grid-cols-2 items-stretch">
+          <img src="https://via.placeholder.com/552x270" />
+          <div class="grid md:text-left bg-gray-100 px-5 py-2">
             <h3>ScaleReal Technologies</h3>
             <p>
               ScaleReal is a team of like minded people building high quality
               products. They believe in Open, Remote and Agile work culture
               apart from Technology, People, Process and Strategy.
             </p>
-            <div>Icon</div>
+            <div class="self-end">Icon</div>
           </div>
         </div>
       </div>
