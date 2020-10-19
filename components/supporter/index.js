@@ -4,7 +4,7 @@ const SupporterSection = ({title, file}) => {
     return (
       <div class="mt-20 grid gap-4 justify-items-center">
         <h2 class="">{title}</h2>
-        <div class="flex justify-center flex-wrap">
+        <div class="flex justify-center flex-wrap container">
           {supporters.map((supporter) => (
             <div class="rounded overflow-hidden shadow-lg bg-white m-3 sm:w-1/3 md:w-1/6 grid">
               <img

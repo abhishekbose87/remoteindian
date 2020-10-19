@@ -1,24 +1,48 @@
 import SupporterSection from "components/supporter";
+import { Mark } from "components/mark";
 
 export default function Support() {
   return (
     <div>
-      <div class="grid justify-center text-center bg-gray-200 p-10  items-center">
-        <svg class="heart mx-auto my-3" viewBox="0 0 32 29.6">
-          <path
-            d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+      <div class="grid grid-rows-auto">
+        <div class="row-start-2 row-end-4 col-span-full bg-gray-200 w-full"></div>
+        <div class="row-start-1 row-end-3 flex justify-center items-center col-span-full">
+          <div class="bg-white mt-4 p-10 rounded-lg shadow-md w-3/4 border-t-2 border-l-2 border-red-600 border-solid">
+            <h1 class="text-xl font-bold">
+              Help me reach a Minimum Viable Income goal of <Mark>500$</Mark>
+            </h1>
+            <div class="mt-4 mb-10">
+              <p class="text-gray-600">60% completed</p>
+              <div class="bg-gray-400 w-64 h-3 rounded-lg mt-2">
+                <div class="bg-pink-500 w-3/5 h-full rounded-lg shadow"></div>
+              </div>
+            </div>
+
+            <h2 class="tracking-wide">
+              Your contribution keeps the RemoteIndian project independent and
+              inclusive for everyone
+            </h2>
+
+            <a href="mailto: abhishek@remoteindian.com">
+              <button class="bg-orange-400 hover:bg-orange-500 py-3 px-8 mt-4 rounded-lg text-black">
+                Support me
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="row-start-3 row-end-4 col-span-full grid justify-center text-center bg-gray-200 p-10  items-center">
+          <svg class="heart mx-auto my-3" viewBox="0 0 32 29.6">
+            <path
+              d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
 	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
-          />
-        </svg>
-        <div class="max-w-lg">
-          <h3>A big Thank You to all our supporters 🙏</h3>
-          <p>
-            Your contribution keeps the RemoteIndian project independent and
-            inclusive for everyone 🙌
-          </p>
+            />
+          </svg>
+          <div class="">
+            <h3>A big Thank You to all our current supporters 🙏</h3>
+          </div>
         </div>
       </div>
-
       {/* Sponsors */}
       <div class="section grid gap-4 container justify-items-center m-20">
         <h2 class="">🌟 Sponsors</h2>
@@ -50,7 +74,6 @@ export default function Support() {
           </div>
         </div>
       </div>
-
       <div class="grid grid-rows-auto justify-items-center">
         <div class="bg-gray-200 row-start-2 row-end-5 col-span-full w-full"></div>
 
@@ -72,7 +95,7 @@ export default function Support() {
         </div>
 
         {/* Footer */}
-        <div class="row-start-4 row-end-6 col-span-full  max-w-xl text-center bg-black text-white p-10 m-10 mt-20">
+        <div class="row-start-4 row-end-6 col-span-full  w-4/5 md:w-2/5 text-center bg-black text-white p-10 m-10 mt-20">
           <h3>Like what we are doing?</h3>
           <a href="/signup">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">
