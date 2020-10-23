@@ -93,3 +93,14 @@ code:not([class]) {
   50% { transform: scale(1.3); }
   100% { transform: scale(1); }
 }
+
+.supporter-card{
+  width: 120px;
+}
+
+@media (max-width: 640px){
+  .supporter-card{
+    width: 90px;
+  }
+}
+

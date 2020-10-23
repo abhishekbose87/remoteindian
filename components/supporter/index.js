@@ -3,11 +3,14 @@ const SupporterSection = ({title, patrons}) => {
     return (
       <div className="mt-20 grid gap-4 justify-items-center">
         <h2 className="">{title}</h2>
-        <div className="flex justify-center flex-wrap container">
+        <div className="flex justify-center flex-wrap">
           {patrons.map((supporter) => (
-            <div className="rounded overflow-auto  shadow-lg bg-white m-3 sm:w-1/3 md:w-1/5 grid" key={supporter.id}>
+            <div
+              className="rounded overflow-show  shadow-lg bg-white m-3 supporter-card grid"
+              key={supporter.id}
+            >
               <img
-                className="rounded-full mx-auto mt-4 w-3/4"
+                className="rounded-full mx-auto mt-4 w-4/5 h-1/2"
                 src={supporter.image_url}
               />
               <div className="font-bold my-2 px-2 text-center text-gray-900">

@@ -22,9 +22,14 @@ const SupporterHeader = () => {
            <div className="sm:block md:inline">👨‍💻&nbsp;🇮🇳&nbsp;👩‍💻</div>
          </nav>
          <div className="flex flex-col md:flex-row items-center justify-center place-items-center px-8 text-sm md:text-base">
-           <button className="bg-orange-400 hover:bg-orange-500 py-2 px-2 rounded-lg text-black text-extrabold">
-             Become a patron
-           </button>
+           <a
+             href="mailto:abhishek@remoteindian.com?subject=I'd like to support the RI project"
+             target="_blank"
+           >
+             <button className="bg-orange-400 hover:bg-orange-500 py-2 px-2 rounded-lg text-black text-extrabold">
+               Become a patron
+             </button>
+           </a>
          </div>
        </div>
      </div>

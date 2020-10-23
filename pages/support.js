@@ -20,10 +20,14 @@ export default function Support({
             <h1 className="text-xl font-bold">Goal</h1>
             <div className="mt-4 mb-4">
               <p>
-                $310 of $500 <span className="text-gray-600">per month</span>
+                &#x20B9;21k of &#x20B9;35K{" "}
+                <span className="text-gray-600">per month</span>
               </p>
               <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">
-                <div className="bg-pink-500 w-3/5 h-full rounded-lg shadow"></div>
+                <div
+                  className="bg-red-600 h-full rounded-lg shadow"
+                  style={{ width: "60%" }}
+                ></div>
               </div>
             </div>
             <div className="tracking-wide">
@@ -65,7 +69,7 @@ export default function Support({
       <div className="section grid gap-4 container justify-items-center m-20">
         <h2 className="">🌟 Sponsors</h2>
         <div className="grid md:grid-cols-2 items-stretch">
-          <img src="https://via.placeholder.com/552x270" />
+          <img src="/sponsors/scalereal.png" />
           <div className="grid sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
             <h3>ScaleReal Technologies</h3>
             <p>
@@ -74,7 +78,7 @@ export default function Support({
               apart from Technology, People, Process and Strategy.
             </p>
             <div className="self-end mb-2 sm:mx-auto md:mx-0 ">
-              <a href="#">
+              <a href="https://scalereal.com/">
                 <svg
                   className="fill-current w-6 h-6 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
