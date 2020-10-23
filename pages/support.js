@@ -2,7 +2,14 @@ import SupporterSection from "components/supporter";
 import SupportHeader from "components/support-header";
 import { Mark } from "components/mark";
 
-export default function Support() {
+import { supabase } from "../lib/supabase/api";
+
+export default function Support({
+  top_supporters,
+  supporters,
+  contributors,
+  bmc
+}) {
   return (
     <div className="text-sm md:text-base">
       <SupportHeader />
@@ -87,23 +94,60 @@ export default function Support() {
 
         {/* Top Supporter */}
         <div className="row-start-1 row-end-3 container col-span-full">
-          <SupporterSection title="🥇 Top Supporters" file="top_supporters" />
+          <SupporterSection
+            title="🥇 Top Supporters"
+            patrons={top_supporters}
+          />
         </div>
 
         {/* Others */}
         <div className="row-start-3 row-end-4 grid col-span-full container">
           {/* Supporter */}
-          <SupporterSection title="🙌  Supporters" file="supporters" />
+          <SupporterSection title="🙌  Supporters" patrons={supporters} />
 
           {/* Contributor */}
-          <SupporterSection title="🥤 Contributors" file="contributors" />
+          <SupporterSection title="🥤 Contributors" patrons={contributors} />
 
           {/* Buy me a Coffee */}
-          <SupporterSection title="☕️ Buy me a Coffee" file="bmc" />
+          <SupporterSection title="☕️ Buy me a Coffee" patrons={bmc} />
         </div>
 
         {/* End  */}
       </div>
     </div>
   );
+}
+
+function filter_function(patrons, type){
+  patrons.filter(elem, function(elem) {
+      return elem.plan === type
+    })
+}
+
+const asyncFilter = async (type) => {
+  let { body: patrons } = await supabase.from("patrons").select("*").eq('plan', type);
+  return patrons;
+};
+
+export async function getStaticProps() {
+  try {
+    
+    
+    let top_supporters = await asyncFilter('Become a TOP supporter');
+    let supporters = await asyncFilter("Become a supporter");
+    let contributors = await asyncFilter("Become a contributor");
+    let bmc = await asyncFilter("Buy me a coffee");
+
+
+    return {
+      props: {
+        top_supporters: top_supporters,
+        supporters: supporters,
+        contributors: contributors,
+        bmc: bmc,
+      }
+    };
+  } catch (error) {
+    console.log("Error: ", error);
+  }
 }

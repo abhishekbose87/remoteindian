@@ -1,21 +1,20 @@
 
-const SupporterSection = ({title, file}) => {
-    const supporters = require(`../../content/patrons/${file}.json`);
+const SupporterSection = ({title, patrons}) => {
     return (
       <div className="mt-20 grid gap-4 justify-items-center">
         <h2 className="">{title}</h2>
         <div className="flex justify-center flex-wrap container">
-          {supporters.map((supporter) => (
-            <div className="rounded overflow-auto  shadow-lg bg-white m-3 sm:w-1/3 md:w-1/5 grid">
+          {patrons.map((supporter) => (
+            <div className="rounded overflow-auto  shadow-lg bg-white m-3 sm:w-1/3 md:w-1/5 grid" key={supporter.id}>
               <img
                 className="rounded-full mx-auto mt-4 w-3/4"
-                src="https://via.placeholder.com/104x104"
+                src={supporter.image_url}
               />
               <div className="font-bold my-2 px-2 text-center text-gray-900">
                 {supporter.name}
               </div>
               <div className="mx-auto self-end mb-2">
-                <a href={supporter.url}>
+                <a href={supporter.link}>
                   <svg
                     className="fill-current w-4 h-4 mr-2"
                     xmlns="http://www.w3.org/2000/svg"
