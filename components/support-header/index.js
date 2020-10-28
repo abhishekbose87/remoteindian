@@ -1,3 +1,7 @@
+import Modal from "components/modal";
+import Link from "next/link";
+import StripeCheckout from "components/StripeCheckout";
+
 const SupporterHeader = () => {
 
  return (
@@ -22,14 +26,22 @@ const SupporterHeader = () => {
            <div className="sm:block md:inline">👨‍💻&nbsp;🇮🇳&nbsp;👩‍💻</div>
          </nav>
          <div className="flex flex-col md:flex-row items-center justify-center place-items-center px-8 text-sm md:text-base">
-           <a
+           {/* <a
              href="mailto:abhishek@remoteindian.com?subject=I'd like to support the RI project"
              target="_blank"
            >
              <button className="bg-orange-400 hover:bg-orange-500 py-2 px-2 rounded-lg text-black text-extrabold">
                Become a patron
              </button>
-           </a>
+           </a> */}
+           {/* <Modal /> */}
+           {/* <Link href="/donate-with-checkout">
+             <a className="card checkout-style-background">
+               <h2 className="bottom">Donate with Checkout</h2>
+               <img src="/checkout-one-time-payments.svg" />
+             </a>
+           </Link> */}
+           <StripeCheckout/>
          </div>
        </div>
      </div>

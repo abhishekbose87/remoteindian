@@ -11,8 +11,9 @@ export default function Support({
   contributors,
   bmc
 }) {
+
   return (
-    <body>
+    <>
       <Helmet />
       <div className="text-sm md:text-base">
         <SupportHeader />
@@ -122,7 +123,7 @@ export default function Support({
           {/* End  */}
         </div>
       </div>
-    </body>
+    </>
   );
 }
 
