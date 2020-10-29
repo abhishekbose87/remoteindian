@@ -17,7 +17,7 @@ export default function Support({
       <Helmet />
       <div className="text-sm md:text-base">
         <SupportHeader />
-        <div className="grid grid-rows-auto mt-48 md:mt-32">
+        <div className="grid grid-rows-auto mt-4">
           <div className="row-start-2 row-end-4 col-span-full bg-gray-200 w-full"></div>
           <div className="row-start-1 row-end-3 flex justify-center items-center col-span-full">
             <div className="bg-white mt-4 p-8 pb-4 rounded-lg shadow-md w-10/12 md:w-3/4 border-t-2 border-l-2 border-red-600 border-solid">
@@ -34,21 +34,14 @@ export default function Support({
                   ></div>
                 </div>
               </div>
-              <div className="tracking-wide">
-                A steady income, where I can live comfortably, will allow me to
-                execute the ideas that will create more value for everyone in
-                the tribe.
-              </div>
               <blockquote className="p-2 md:p-4 mt-4 italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
-                For example, I will{" "}
+                When I reach a minimum viable income, I will build a new
+                community space for the community to hangout.&nbsp;
                 <strong>
-                  build a bespoke coffee shop like digital space for the RI
-                  community to hangout
+                  It will be a bespoke coffee shop like digital experience with
+                  all the slack archives migrated to this website.
                 </strong>
-                . Something like GetMakerlog or IndieHackers. Slack is a solid
-                tool for building online communities, but it feels limiting in
-                many ways and the experience is similar to what you would get in
-                a Starbucks
+                Something like GetMakerlog or IndieHackers.
               </blockquote>
             </div>
           </div>
