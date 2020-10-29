@@ -13,24 +13,73 @@ export default function Support({
   bmc
 }) {
 
+  const patron_benefits = [
+        {
+          id: 1,
+          text:
+            "💌 Receive monthly insider emails - Let’s talk about the RemoteIndian project and make sure you get the best from it",
+        },
+        { id: 2, text: "📹 Unlock recordings of 20+ Zoom calls - Dive into topics like Personal Finance for Remote workers, Health Insurance or revisit AMAs with folks working in Doist, Zeit etc" },
+        {
+          id: 3,
+          text:
+            "❤️ Enter our Hall of Fame - You’ll be part of a page on our website dedicated to Patrons",
+        },
+      ]
+
   const tiers = {
     sponsor: {
       cta: "Sponsor the RI project",
       headline: "🌟 Sponsor the RI Project",
-      amount: "7k",
+      amount: "7,000",
       benefits: [
-        {id: 1,
-          text: "📸 Your company logo will be displayed in the Sponsors section on the RemoteIndian website"},
-        {id: 2, text:"📣 Shout-out on Twitter and in our Slack group"},
-        {id: 3, text:"💌 I will share your product link, blog post or job posting in our newsletter once every month (This weekly newsletter gets delivered to 1300+ email subscribers with average open rates of 30% and click rates of 4-7%)"},
+        {
+          id: 1,
+          text:
+            "📸 Your company logo will be displayed in the Sponsors section on the RemoteIndian website",
+        },
+        { id: 2, text: "📣 Shout-out on Twitter and in our Slack group" },
+        {
+          id: 3,
+          text:
+            "💌 I will share your product link, blog post or job posting in our newsletter once every month (This weekly newsletter gets delivered to 1300+ email subscribers with average open rates of 30% and click rates of 4-7%)",
+        },
       ],
+      priceId: "price_1HfJtBELWWA5un1pX0jLb99k",
+    },
+    top_supporter: {
+      cta: "Become a Top supporter",
+      headline: "🥇 Become a Top supporter",
+      amount: "1,400",
+      benefits: patron_benefits,
+      priceId: "price_1HfJtBELWWA5un1pX0jLb99k",
+    },
+    supporter: {
+      cta: "Become a supporter",
+      headline: "🙌 Become a supporter",
+      amount: "700",
+      benefits: patron_benefits,
+      priceId: "price_1HfJtBELWWA5un1pX0jLb99k",
+    },
+    contributor: {
+      cta: "Become a contributor",
+      headline: "🥤 Become a contributor",
+      amount: "350",
+      benefits: patron_benefits,
+      priceId: "price_1HfJtBELWWA5un1pX0jLb99k",
+    },
+    bmc: {
+      cta: "Buy me a coffee",
+      headline: "☕ Buy me a coffee",
+      amount: "150",
+      benefits: patron_benefits,
       priceId: "price_1HfJtBELWWA5un1pX0jLb99k",
     },
   };
 
   return (
     <>
-      <Helmet />
+      <Helmet title={"🙏 Support the RemoteIndian Project"} />
       <div className="text-sm md:text-base">
         <SupportHeader />
         <div className="grid grid-rows-auto mt-4">
@@ -105,7 +154,7 @@ export default function Support({
               </div>
             </div>
           </div>
-          <Modal info={tiers.sponsor}/>
+          <Modal info={tiers.sponsor} />
         </div>
         <div className="grid grid-rows-auto justify-items-center">
           <div className="bg-gray-200 row-start-2 row-end-5 col-span-full w-full"></div>
@@ -114,20 +163,20 @@ export default function Support({
           <div className="row-start-1 row-end-3 container col-span-full">
             <SupporterSection
               title="🥇 Top Supporters"
-              patrons={top_supporters}
+              patrons={top_supporters} tier={tiers.top_supporter}
             />
           </div>
 
           {/* Others */}
           <div className="row-start-3 row-end-4 grid col-span-full container">
             {/* Supporter */}
-            <SupporterSection title="🙌  Supporters" patrons={supporters} />
+            <SupporterSection title="🙌  Supporters" patrons={supporters} tier={tiers.supporter}/>
 
             {/* Contributor */}
-            <SupporterSection title="🥤 Contributors" patrons={contributors} />
+            <SupporterSection title="🥤 Contributors" patrons={contributors} tier={tiers.contributor}/>
 
             {/* Buy me a Coffee */}
-            <SupporterSection title="☕️ Buy me a Coffee" patrons={bmc} />
+            <SupporterSection title="☕️ Buy me a Coffee" patrons={bmc} tier={tiers.bmc}/>
           </div>
 
           {/* End  */}

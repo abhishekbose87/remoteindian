@@ -1,7 +1,8 @@
+import Modal from "components/modal";
 
-const SupporterSection = ({title, patrons}) => {
+const SupporterSection = ({title, patrons, tier}) => {
     return (
-      <div className="mt-20 grid gap-4 justify-items-center">
+      <div className="my-4 md:m-10 grid gap-4 justify-items-center">
         <h2 className="">{title}</h2>
         <div className="flex justify-center flex-wrap">
           {patrons.map((supporter) => (
@@ -32,6 +33,7 @@ const SupporterSection = ({title, patrons}) => {
             </div>
           ))}
         </div>
+        <Modal info={tier} />
       </div>
     );
 }

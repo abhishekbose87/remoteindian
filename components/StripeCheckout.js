@@ -9,6 +9,7 @@ export default function StripeCheckout({priceId}) {
 
     const handleClick = async (event) => {
       // Get Stripe.js instance
+
       const stripe = await stripePromise;
 
       // Call your backend to create the Checkout Session
