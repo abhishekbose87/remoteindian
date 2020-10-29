@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import StripeCheckout from "components/StripeCheckout";
 
-export default function Modal(props) {
+export default function Modal({info: {cta, amount, benefits, priceId}}) {
   const [showModal, setShowModal] = React.useState(true);
   return (
     <>
@@ -12,7 +12,7 @@ export default function Modal(props) {
         style={{ transition: "all .15s ease" }}
         onClick={() => setShowModal(true)}
       >
-        {props.cta}
+        {cta}
       </button>
       <a onClick={() => setShowModal(true)} type="button">
         What are the benefits?
@@ -32,28 +32,21 @@ export default function Modal(props) {
                 {/*header*/}
                 <div className="flex flex-col items-center justify-center">
                   <h4 className="font-semibold">🏆 Become a sponsor</h4>
-                  <p>$100 per month</p>
+                  <p>
+                    &#x20B9;{amount}{" "} per month
+                  </p>
                 </div>
                 {/*body*/}
                 <div className="px-2 md:px-4 flex-auto">
                   <p className="text-gray-800 leading-relaxed">
-                    <p>
-                      📸 Your company logo will be displayed in the "Sponsors"
-                      section on the RemoteIndian website
-                    </p>{" "}
-                    <p>📣 Shout-out on Twitter and in our Slack group.</p>
-                    <p>
-                      {" "}
-                      💌 I will share your product link, blog post or job
-                      posting in our newsletter once every month (This weekly
-                      newsletter gets delivered to 1300+ email subscribers with
-                      average open rates of 30% and click rates of 4-7%)
-                    </p>
+                    {benefits.map((benefit) => (
+                      <p key={benefit.id}>{benefit.text}</p>
+                    ))}
                   </p>
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-center px-6 py-2">
-                  <StripeCheckout />
+                  <StripeCheckout priceId={priceId} />
                 </div>
               </div>
             </div>

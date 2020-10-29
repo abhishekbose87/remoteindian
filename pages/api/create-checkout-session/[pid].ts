@@ -8,13 +8,18 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+
+  const {
+    query: { pid },
+  } = req;
+
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     line_items: [
       {
         // Replace `price_...` with the actual price ID for your subscription
         // you created in step 2 of this guide.
-        price: "price_1HfJtBELWWA5un1pX0jLb99k",
+        price: pid,
         quantity: 1,
       },
     ],

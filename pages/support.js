@@ -13,6 +13,21 @@ export default function Support({
   bmc
 }) {
 
+  const tiers = {
+    sponsor: {
+      cta: "Sponsor the RI project",
+      headline: "🌟 Sponsor the RI Project",
+      amount: "7k",
+      benefits: [
+        {id: 1,
+          text: "📸 Your company logo will be displayed in the Sponsors section on the RemoteIndian website"},
+        {id: 2, text:"📣 Shout-out on Twitter and in our Slack group"},
+        {id: 3, text:"💌 I will share your product link, blog post or job posting in our newsletter once every month (This weekly newsletter gets delivered to 1300+ email subscribers with average open rates of 30% and click rates of 4-7%)"},
+      ],
+      priceId: "price_1HfJtBELWWA5un1pX0jLb99k",
+    },
+  };
+
   return (
     <>
       <Helmet />
@@ -90,7 +105,7 @@ export default function Support({
               </div>
             </div>
           </div>
-          <Modal cta="Sponsor the RI project"/>
+          <Modal info={tiers.sponsor}/>
         </div>
         <div className="grid grid-rows-auto justify-items-center">
           <div className="bg-gray-200 row-start-2 row-end-5 col-span-full w-full"></div>

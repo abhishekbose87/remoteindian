@@ -5,14 +5,14 @@ import { loadStripe } from "@stripe/stripe-js";
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe("pk_test_dtRV2LpPi8mmOD1kD9I2DjU700KdHEDGdZ");
 
-export default function StripeCheckout() {
+export default function StripeCheckout({priceId}) {
 
     const handleClick = async (event) => {
       // Get Stripe.js instance
       const stripe = await stripePromise;
 
       // Call your backend to create the Checkout Session
-      const response = await fetch("/api/create-checkout-session",
+      const response = await fetch(`/api/create-checkout-session/${priceId}`,
         {
           method: "POST",
         }
