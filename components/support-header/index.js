@@ -1,6 +1,5 @@
-import Modal from "components/modal";
-import Link from "next/link";
-import StripeCheckout from "components/StripeCheckout";
+
+
 
 const SupporterHeader = () => {
 

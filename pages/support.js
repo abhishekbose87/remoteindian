@@ -1,5 +1,6 @@
 import SupporterSection from "components/supporter";
 import SupportHeader from "components/support-header";
+import Modal from "components/modal";
 import { Mark } from "components/mark";
 
 import { supabase } from "../lib/supabase/api";
@@ -24,7 +25,7 @@ export default function Support({
               <h1 className="text-xl font-bold">Goal</h1>
               <div className="mt-4 mb-4">
                 <p>
-                  &#x20B9;21k of &#x20B9;35K{" "}
+                  &#x20B9;21k of &#x20B9;35k{" "}
                   <span className="text-gray-600">per month</span>
                 </p>
                 <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">
@@ -89,6 +90,7 @@ export default function Support({
               </div>
             </div>
           </div>
+          <Modal cta="Sponsor the RI project"/>
         </div>
         <div className="grid grid-rows-auto justify-items-center">
           <div className="bg-gray-200 row-start-2 row-end-5 col-span-full w-full"></div>

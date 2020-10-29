@@ -104,3 +104,8 @@ code:not([class]) {
   }
 }
 
+.bg-smoke-light,
+.hover\:bg-smoke-light:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
