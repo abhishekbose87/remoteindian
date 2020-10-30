@@ -34,7 +34,7 @@
     "font-awesome": "^4.7.0",
     "micro": "^9.3.4",
     "micro-cors": "^0.1.1",
-    "next": "9.3.2",
+    "next": "latest",
     "node-sass": "^4.13.1",
     "postcss-css-variables": "^0.14.0",
     "query-string": "^6.10.1",
