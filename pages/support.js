@@ -66,7 +66,7 @@ export default function Support({
       headline: "🥤 Become a contributor",
       amount: "350",
       benefits: patron_benefits,
-      priceId: "price_1HfJtBELWWA5un1pX0jLb99k",
+      priceId: "price_1HhpWVELWWA5un1psjjxNcvQ",
     },
     bmc: {
       cta: "Buy me a coffee",

@@ -19,7 +19,7 @@ export default async function handler(
       {
         // Replace `price_...` with the actual price ID for your subscription
         // you created in step 2 of this guide.
-        price: pid,
+        price: `${pid}`,
         quantity: 1,
       },
     ],
