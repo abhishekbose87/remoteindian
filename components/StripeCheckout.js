@@ -35,12 +35,13 @@ export default function StripeCheckout({priceId}) {
 
     return (
       <button
-                    className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-2"
-                    type="button"
-                    style={{ transition: "all .15s ease" }}
-                    role="link" onClick={handleClick}
-                  >
-                    Support the RI project
-                  </button>
+        className="bg-blue-600 hover:bg-blue-700 text-white  active:bg-blue-900 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-2"
+        type="button"
+        style={{ transition: "all .15s ease" }}
+        role="link"
+        onClick={handleClick}
+      >
+        Support the RI project
+      </button>
     );
 }

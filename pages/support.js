@@ -85,7 +85,7 @@ export default function Support({
         <div className="grid grid-rows-auto mt-4">
           <div className="row-start-2 row-end-4 col-span-full bg-gray-200 w-full"></div>
           <div className="row-start-1 row-end-3 flex justify-center items-center col-span-full">
-            <div className="bg-white mt-4 p-8 pb-4 rounded-lg shadow-md w-10/12 md:w-3/4 border-t-2 border-l-2 border-red-600 border-solid">
+            <div className="bg-white mt-4 p-8 pb-4 rounded-lg shadow-md w-10/12 md:w-3/4 border-2 border-red-600 border-solid">
               <h1 className="text-xl font-bold">Goal</h1>
               <div className="mt-4 mb-4">
                 <p>
@@ -99,7 +99,7 @@ export default function Support({
                   ></div>
                 </div>
               </div>
-              <blockquote className="p-2 md:p-4 mt-4 italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
+              <div className="tracking-wide">
                 When I reach a minimum viable income, I will build a new
                 community space for the community to hangout.&nbsp;
                 <strong>
@@ -107,7 +107,7 @@ export default function Support({
                   all the slack archives migrated to this website.
                 </strong>
                 Something like GetMakerlog or IndieHackers.
-              </blockquote>
+              </div>
             </div>
           </div>
 
@@ -163,20 +163,33 @@ export default function Support({
           <div className="row-start-1 row-end-3 container col-span-full">
             <SupporterSection
               title="🥇 Top Supporters"
-              patrons={top_supporters} tier={tiers.top_supporter}
+              patrons={top_supporters}
+              tier={tiers.top_supporter}
             />
           </div>
 
           {/* Others */}
           <div className="row-start-3 row-end-4 grid col-span-full container">
             {/* Supporter */}
-            <SupporterSection title="🙌  Supporters" patrons={supporters} tier={tiers.supporter}/>
+            <SupporterSection
+              title="🙌  Supporters"
+              patrons={supporters}
+              tier={tiers.supporter}
+            />
 
             {/* Contributor */}
-            <SupporterSection title="🥤 Contributors" patrons={contributors} tier={tiers.contributor}/>
+            <SupporterSection
+              title="🥤 Contributors"
+              patrons={contributors}
+              tier={tiers.contributor}
+            />
 
             {/* Buy me a Coffee */}
-            <SupporterSection title="☕️ Buy me a Coffee" patrons={bmc} tier={tiers.bmc}/>
+            <SupporterSection
+              title="☕️ Buy me a Coffee"
+              patrons={bmc}
+              tier={tiers.bmc}
+            />
           </div>
 
           {/* End  */}

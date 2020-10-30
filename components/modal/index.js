@@ -7,14 +7,17 @@ export default function Modal({info: {cta, headline, amount, benefits, priceId}}
   return (
     <>
       <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-4"
+        className="bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-4"
         type="button"
         style={{ transition: "all .15s ease" }}
         onClick={() => setShowModal(true)}
       >
         {cta}
       </button>
-      <a onClick={() => setShowModal(true)} type="button">
+      <a
+        onClick={() => setShowModal(true)}
+        type="button"
+      >
         What are the benefits?
       </a>
       {showModal ? (
@@ -31,11 +34,11 @@ export default function Modal({info: {cta, headline, amount, benefits, priceId}}
                 </span>
                 {/*header*/}
                 <div className="flex flex-col items-center justify-center">
-      <h4 className="font-semibold">{headline}</h4>
+                  <h4 className="font-semibold">{headline}</h4>
                   <p>&#x20B9;{amount} per month</p>
                 </div>
                 {/*body*/}
-                <div className="px-2 md:px-4 flex-auto">
+                <div className="px-4 md:px-6 flex-auto">
                   <div className="text-gray-800 leading-relaxed">
                     {benefits.map((benefit) => (
                       <p key={benefit.id}>{benefit.text}</p>
@@ -43,7 +46,7 @@ export default function Modal({info: {cta, headline, amount, benefits, priceId}}
                   </div>
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-center px-6 py-2">
+                <div className="flex items-center justify-center px-6 py-2 mb-4">
                   <StripeCheckout priceId={priceId} />
                 </div>
               </div>

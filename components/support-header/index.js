@@ -9,14 +9,16 @@ const SupporterHeader = () => {
        <div>
          <a href="#" className="flex">
            <img
-             className="w-12 md:w-24 lg:w-20 rounded-full"
+             className="rounded-full"
              src="https://gravatar.com/avatar/44b0a8e0642abcaef47c43de389a0dca?size=200"
              alt="Abhishek's image"
+             width="100"
+             height="100"
            />
          </a>
        </div>
        <div className="flex flex-col md:flex-row items-center justify-between align-middle gap-2">
-         <nav className="text-center md:text-left text-sm md:text-base">
+         <nav className="text-center md:text-left text-sm md:text-base font-semibold">
            <span>
              Abhishek is creating a community that enables Indian engineers and
              product professionals to help each other navigate, balance and grow

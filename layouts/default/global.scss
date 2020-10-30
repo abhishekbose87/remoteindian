@@ -109,3 +109,11 @@ code:not([class]) {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+a[type="button"] {
+    color: #3182ce;;
+}
+a[type="button"]:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
