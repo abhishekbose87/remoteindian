@@ -79,7 +79,10 @@ export default function Support({
 
   return (
     <>
-      <Helmet title={"🙏 Support the RemoteIndian Project"} />
+      <Helmet
+        title="🙏 Please consider supporting the RemoteIndian Project"
+        description="Your contribution keeps the community independent and inclusive for everyone 🤗"
+      />
       <div className="text-sm md:text-base">
         <SupportHeader />
         <div className="grid grid-rows-auto mt-4">
