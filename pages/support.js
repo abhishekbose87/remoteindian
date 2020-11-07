@@ -92,13 +92,13 @@ export default function Support({
               <h1 className="text-xl font-bold">Goal</h1>
               <div className="mt-4 mb-4">
                 <p>
-                  &#x20B9;21k of &#x20B9;35k{" "}
+                  &#x20B9;27.5k of &#x20B9;35k{" "}
                   <span className="text-gray-600">per month</span>
                 </p>
                 <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">
                   <div
                     className="bg-red-600 h-full rounded-lg shadow"
-                    style={{ width: "60%" }}
+                    style={{ width: "75%" }}
                   ></div>
                 </div>
               </div>
