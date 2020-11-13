@@ -22,6 +22,8 @@
     "@mdx-js/loader": "^1.5.5",
     "@mdx-js/react": "^1.5.5",
     "@next/mdx": "^9.2.0",
+    "@stripe/stripe-js": "^1.10.0",
+    "@supabase/supabase-js": "^0.36.5",
     "@svgr/webpack": "^5.0.1",
     "@zeit/next-css": "latest",
     "@zeit/next-sass": "^1.0.1",
@@ -30,20 +32,31 @@
     "classnames": "^2.2.6",
     "date-fns": "^2.9.0",
     "font-awesome": "^4.7.0",
-    "next": "9.3.2",
+    "micro": "^9.3.4",
+    "micro-cors": "^0.1.1",
+    "next": "latest",
     "node-sass": "^4.13.1",
     "postcss-css-variables": "^0.14.0",
     "query-string": "^6.10.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "sass": "^1.26.8",
+    "stripe": "8.56.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@types/micro": "^7.3.3",
+    "@types/micro-cors": "^0.1.0",
+    "@types/node": "^14.14.2",
+    "@types/react": "^16.9.53",
     "babel-plugin-styled-components": "^1.10.6",
     "gh-pages": "^2.2.0",
     "glob": "^7.1.6",
     "jest": "^24.9.0",
-    "serve": "^11.3.0"
+    "postcss-preset-env": "^6.7.0",
+    "serve": "^11.3.0",
+    "tailwindcss": "^1.9.3",
+    "typescript": "^4.0.3"
   }
 }

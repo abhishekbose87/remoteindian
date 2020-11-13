@@ -38,7 +38,7 @@ const Helmet = (props) => (
     <meta name="twitter:title" content={ prepareTitle(props.title) } />
     <meta name="twitter:description" content={ prepareDescription(props.description) } />
     <meta name="twitter:image" content={ `${siteConfig.url.web}${siteConfig.logoSquare}` } />
-    <meta name="twitter:image:alt" content="roadmap.sh" />
+    <meta name="twitter:image:alt" content="remoteindian.com" />
 
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
