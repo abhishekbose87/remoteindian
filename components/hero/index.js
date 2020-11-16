@@ -152,7 +152,7 @@ const Hero = () => (
       <main className="mt-8 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-            <h2 className="mt-1 text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-4xl lg:text-3xl xl:text-5xl">
+            <h2 className="mt-1 text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-3xl lg:text-4xl xl:text-5xl">
               <span className="text-indigo-600">Remote Indian</span>
               <br className="hidden md:inline" />
               <span>
@@ -160,17 +160,59 @@ const Hero = () => (
                 remotely from India
               </span>
             </h2>
-            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              1200+ Members
-            </p>
-            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              5000+ Messages exchanged monthly
-            </p>
+            <div className="mt-4 grid grid-cols-12 justify-end border-b pb-2">
+              <div className="col-span-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-gray-700"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  height="24px"
+                  width="24px"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+              </div>
+              <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl">
+                1200+ Members
+              </div>
+            </div>
+
+            <div className="mt-4 grid grid-cols-12 justify-end pb-2">
+              <div className="col-span-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-gray-700"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  height="24px"
+                  width="24px"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  />
+                </svg>
+              </div>
+              <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl">
+                5000+ Messages exchanged monthly
+              </div>
+            </div>
+
             <div className="mt-3 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
               <form action="#" method="POST" className="mt-3 sm:flex">
                 <input
                   aria-label="Email"
-                  className="appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1 mt-3"
+                  className="appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1 "
                   placeholder="Enter your email"
                 />
                 <button
