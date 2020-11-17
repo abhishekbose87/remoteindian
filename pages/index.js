@@ -6,6 +6,7 @@ import Helmet from 'components/helmet';
 import Hero from "components/hero";
 import Logo from "components/logo"
 import SlackSection from "components/slack-section";
+import Testimonials from "components/testimonials";
 import DefaultLayout from 'layouts/default/index';
 
 const Home = (props) => (
@@ -17,6 +18,7 @@ const Home = (props) => (
     <HeroSection /> */}
     <SlackSection />
     <FeaturedContent />
+    <Testimonials />
     <PageFooter />
   </DefaultLayout>
 );
