@@ -1,7 +1,7 @@
 const Logo = () => (
   <div className="bg-white">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
-      <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+      <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
         A community of achievers
       </h2>
       <p className="text-base leading-6 font-semibold uppercase text-gray-600 tracking-wider">

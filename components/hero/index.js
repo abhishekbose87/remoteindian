@@ -25,9 +25,9 @@ const Hero = () => (
                   viewBox="0 0 24 24"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
@@ -104,9 +104,9 @@ const Hero = () => (
                     viewBox="0 0 24 24"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
@@ -164,7 +164,7 @@ const Hero = () => (
               <div className="col-span-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="text-gray-700"
+                  className="text-gray-700"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -188,7 +188,7 @@ const Hero = () => (
               <div className="col-span-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="text-gray-700"
+                  className="text-gray-700"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

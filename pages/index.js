@@ -5,6 +5,7 @@ import SiteNav from 'components/site-nav';
 import Helmet from 'components/helmet';
 import Hero from "components/hero";
 import Logo from "components/logo"
+import SlackSection from "components/slack-section";
 import DefaultLayout from 'layouts/default/index';
 
 const Home = (props) => (
@@ -14,6 +15,7 @@ const Home = (props) => (
     <Logo />
     {/* <SiteNav />
     <HeroSection /> */}
+    <SlackSection />
     <FeaturedContent />
     <PageFooter />
   </DefaultLayout>

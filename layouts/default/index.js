@@ -15,8 +15,8 @@ class DefaultLayout extends React.Component {
 
   render() {
     return (
-      <div>
-        {/* <div className={ classNames('banner-wrap', { 'd-none': this.state.isBannerClosed }) }>
+      <div className="font-inter">
+        {/* < className="font-inter" className={ classNames('banner-wrap', { 'd-none': this.state.isBannerClosed }) }>
           <SponsorBanner onCloseBanner={() => this.setState({ isBannerClosed: true })} />
         </div> */}
         {/* <div className={ classNames('body-wrap', { 'sponsor-banner-visible': !this.state.isBannerClosed }) }> */}
