@@ -154,7 +154,9 @@ const Hero = () => (
         <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
             <h2 className="mt-1 text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-3xl lg:text-4xl xl:text-5xl">
-              <span className="text-indigo-600">Remote Indian</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+                Remote Indian
+              </span>
               <br className="hidden md:inline" />
               <span>
                 is the biggest and most supportive community of folks working
@@ -209,7 +211,7 @@ const Hero = () => (
               </div>
             </div>
 
-            <SignupForm/>
+            <SignupForm />
           </div>
           <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
             <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">

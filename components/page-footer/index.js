@@ -3,10 +3,10 @@ import siteConfig from "content/site";
 import { FooterWrap } from './style.js'
 
 const PageFooter = () => (
-  <FooterWrap className="border-top">
-    <div className="container">
-      <div className="foot-cols-wrap row">
-        <div className="site-meta-wrap col-xs-12 col-md-6">
+  <FooterWrap className="border-t">
+    <div className="max-w-6xl px-4 md:mx-auto">
+      <div className="foot-cols-wrap grid grid-cols-12">
+        <div className="site-meta-wrap col-span-12 md:col-span-6">
           <div className="site-meta">
             <div className="brand-detail">
               <a href="/" className="brand">
@@ -37,7 +37,7 @@ const PageFooter = () => (
             </p>
           </div>
         </div>
-        <div className="site-contribute foot-col col-xs-12 col-md-2">
+        <div className="site-contribute foot-col col-span-12 md:col-span-2">
           <ul>
             <li className="foot-header">Contribute</li>
             <li>
@@ -57,7 +57,7 @@ const PageFooter = () => (
             </li>
           </ul>
         </div>
-        <div className="site-contribute foot-col col-xs-12 col-md-4">
+        <div className="site-contribute foot-col col-span-12 md:col-span-4">
           <ul>
             <li className="foot-header">Credits</li>
             <li>
@@ -76,7 +76,8 @@ const PageFooter = () => (
               🙌&nbsp;&nbsp;Last but not the least, Thank you{" "}
               <a href="https://remoteindian.com/thanks" target="_blank">
                 patrons
-              </a> for your support!
+              </a>{" "}
+              for your support!
             </li>
           </ul>
         </div>
