@@ -32,7 +32,7 @@ const GuideFooter = ({
     <FooterBg className="border-top">
       <FooterContainer>
         <ShareWrap>
-          <ContributeIcon>
+          {/* <ContributeIcon>
             <a href={ getContributionUrl(guide) } target="_blank">
               <span className="d-none d-sm-none d-md-inline d-lg-inline d-xl-inline">Improve this Guide </span>
               <span className="d-inline d-sm-inline d-md-none d-lg-none d-xl-none">Contribute </span>
@@ -45,10 +45,10 @@ const GuideFooter = ({
               <span className="d-inline d-sm-inline d-md-none d-lg-none d-xl-none">Author </span>
               <FontAwesomeIcon icon={faTwitter}/>
             </a>
-          </ContributeIcon>
+          </ContributeIcon> */}
           <ShareIcons>
-            <span className="d-none d-sm-none d-md-none d-lg-inline d-xl-inline">Help spread the word</span>
-            <span className="d-inline d-sm-inline d-md-inline d-lg-none d-xl-none">Share</span>
+            <span className="hidden lg:inline">Help spread the word</span>
+            <span className="inline lg:hidden">Share</span>
             <a href={ getTwitterShareUrl({ text: `${guide.title} by @${author.twitter}`, url: guide.url })} target="_blank">
               <FontAwesomeIcon icon={faTwitterSquare}/>
             </a>

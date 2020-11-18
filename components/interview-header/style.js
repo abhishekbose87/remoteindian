@@ -48,6 +48,7 @@ export const AuthorImage = styled.img`
   height: 22px;
   border-radius: 100%;
   margin-right: 10px;
+  display: inline-block;
 `;
 
 export const BlockImage = styled.img`

@@ -18,8 +18,8 @@ import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge, DarkBadge } from '
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GuideHeader = ({ guide, guide: { author = {} } = {} }) => (
-  <HeaderWrap className="border-bottom">
-    <div className="col-12 px-0">
+  <HeaderWrap className="border-b">
+    <div className="col-span-12 px-0">
       <BlockImage className="img-fluid" src={guide.image} />
     </div>
     <GuideTitle>{guide.title}</GuideTitle>

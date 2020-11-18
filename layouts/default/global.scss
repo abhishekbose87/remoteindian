@@ -10,9 +10,9 @@
 //   max-width: 800px;
 // }
 
-// ul li, ol li {
-//   margin-bottom: 7px;
-// }
+ul li, ol li {
+  margin-bottom: 7px;
+}
 
 // .border-top {
 //   border-top: 1px solid #eaeaea !important;
@@ -58,15 +58,19 @@
   }
 }
 
-// code:not([class]) {
-//   background: #fafafa;
-//   border-radius: 6px;
-//   display: inline-block;
-//   font-size: inherit;
-//   padding: 0 5px;
-//   word-wrap: normal;
-//   box-shadow: none;
-// }
+code:not([class]) {
+  background: #fafafa;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: inherit;
+  padding: 0 5px;
+  word-wrap: normal;
+  box-shadow: none;
+}
+
+blockquote{
+  margin: 0 0 12px;
+}
 
 // .banner-wrap {
 //   position: fixed;
@@ -107,6 +111,10 @@
 .bg-smoke-light,
 .hover\:bg-smoke-light:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+a{
+  color: #007bff;
 }
 
 a[type="button"] {

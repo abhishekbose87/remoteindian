@@ -22,7 +22,7 @@ const GuideHeader = ({
    author = {}
  } = {}
 }) => (
-  <HeaderWrap className="border-bottom">
+  <HeaderWrap className="border-b">
     <GuideMeta>
       <GuideAuthor href={ getTwitterUrl(author.twitter) } target="_blank">
         <AuthorImage src={ author.picture } />
