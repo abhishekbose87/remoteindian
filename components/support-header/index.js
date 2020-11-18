@@ -4,7 +4,7 @@
 const SupporterHeader = () => {
 
  return (
-   <div className="bg-gray-200 p-2 mt-0 w-full">
+   <div className="p-2 mt-10 w-full">
      <div className="flex flex-col md:flex-row items-center p-2 md:p-4 justify-center space-x-4">
        <div>
          <a href="#" className="flex">

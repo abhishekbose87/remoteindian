@@ -2,6 +2,9 @@ import SupporterSection from "components/supporter";
 import SupportHeader from "components/support-header";
 import Modal from "components/modal";
 import { Mark } from "components/mark";
+import DefaultLayout from "layouts/default/index";
+import Nav from "components/nav";
+import PageFooter from "components/page-footer/index";
 
 import { supabase } from "../lib/supabase/api";
 import Helmet from "../components/helmet";
@@ -78,11 +81,12 @@ export default function Support({
   };
 
   return (
-    <>
+    <DefaultLayout>
       <Helmet
         title="🙏 Please consider supporting the RemoteIndian Project"
         description="Your contribution keeps the community independent and inclusive for everyone 🤗"
       />
+      <Nav />
       <div className="text-sm md:text-base">
         <SupportHeader />
         <div className="grid grid-rows-auto mt-4">
@@ -198,7 +202,8 @@ export default function Support({
           {/* End  */}
         </div>
       </div>
-    </>
+      <PageFooter />
+    </DefaultLayout>
   );
 }
 
