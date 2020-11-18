@@ -135,18 +135,13 @@ export default function Support({
           </div>
         </div>
         {/* Sponsors */}
-        <div className="section grid gap-4 container justify-items-center m-20">
-          <h2 className="">🌟 Sponsors</h2>
-          <div className="grid md:grid-cols-2 items-stretch">
-            <img src="/sponsors/scalereal.png" />
-            <div className="grid sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
+        <div className="section grid gap-4 container justify-items-center mt-20">
+          <h2 className="h3 mb-4">🌟 Sponsors</h2>
+          <div className="flex flex-col w-1/4">
+            <img className="object-cover" src="/sponsors/scalereal.png" />
+            <div className="flex flex-col sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
               <h3>ScaleReal Technologies</h3>
-              <p>
-                ScaleReal is a team of like minded people building high quality
-                products. They believe in Open, Remote and Agile work culture
-                apart from Technology, People, Process and Strategy.
-              </p>
-              <div className="self-end mb-2 sm:mx-auto md:mx-0 ">
+              <div className="mb-2 sm:mx-auto md:mx-0 ">
                 <a href="https://scalereal.com/">
                   <svg
                     className="fill-current w-6 h-6 mr-2"
