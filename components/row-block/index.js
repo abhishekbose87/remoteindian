@@ -9,7 +9,7 @@ const RowBlock = ({
   disabled = false,
   children = null
 }) => (
-  <ItemWrap className="col-md-6 col-lg-4 col-xl-4">
+  <ItemWrap className="md:col-span-6 lg:col-span-4 xl:col-span-4">
     <BlockItem href={ url } disabled={ disabled } target={openExternal ? '_blank' : '_self'}>
       { !children && (
         <>

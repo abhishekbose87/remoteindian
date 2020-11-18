@@ -1,6 +1,7 @@
 import React from 'react';
 import DefaultLayout from 'layouts/default';
 import SiteNav from 'components/site-nav';
+import Nav from "components/nav";
 import PageFooter from 'components/page-footer';
 
 class GuideLayout extends React.Component {
@@ -9,7 +10,7 @@ class GuideLayout extends React.Component {
 
     return (
       <DefaultLayout>
-        <SiteNav />
+        <Nav />
         { children }
         <PageFooter />
       </DefaultLayout>

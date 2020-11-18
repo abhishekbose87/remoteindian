@@ -7,6 +7,7 @@ import DefaultLayout from 'layouts/default/index';
 import PageHeader from 'components/page-header';
 import PageFooter from 'components/page-footer';
 import SiteNav from 'components/site-nav';
+import Nav from "components/nav";
 import IconRowBlock from "components/icon-row-block";
 import RowBlock from "components/row-block";
 import { getAllGuides } from 'lib/guide';
@@ -27,7 +28,7 @@ function getBadgeText(guide) {
 const GuidesList = () => (
   <DefaultLayout>
     <Helmet title={PageTitle} desciption={PageDescription} />
-    <SiteNav />
+    <Nav />
     <PageHeader title={PageTitle} subtitle={PageDescription}>
       <BadgesList className="mt-4">
         <BadgeLink href={siteConfig.url.addGuide} target="_blank">
@@ -44,9 +45,9 @@ const GuidesList = () => (
         </BadgeLink>
       </BadgesList>
     </PageHeader>
-    <div className="pt-5 pb-5 bg-light border-top">
-      <div className="container">
-        <div className="row">
+    <div className="pt-5 pb-5 bg-gray-100 border-t">
+      <div className="px-10">
+        <div className="grid grid-cols-12">
           {getAllGuides().map((guide) => (
             // <FeaturedGuide guide={guide} key={guide.url} />
             <RowBlock

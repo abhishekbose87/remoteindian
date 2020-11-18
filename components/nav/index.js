@@ -32,19 +32,19 @@ const Nav = () => (
           </div>
           <div className="hidden md:block md:ml-10">
             <a
-              href="#"
+              href="/guides"
               className="font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
               Guides
             </a>
             <a
-              href="#"
+              href="/interviews"
               className="ml-10 font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
               Interviews
             </a>
             <a
-              href="#"
+              href="/support"
               className="ml-10 font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
               ❤️ Support
@@ -111,21 +111,21 @@ const Nav = () => (
             </div>
             <div className="px-2 pt-2 pb-3">
               <a
-                href="#"
+                href="/guides"
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
                 Guides
               </a>
               <a
-                href="#"
+                href="/interviews"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
                 Interviews
               </a>
               <a
-                href="#"
+                href="/support"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >

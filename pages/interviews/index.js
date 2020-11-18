@@ -6,6 +6,7 @@ import DefaultLayout from 'layouts/default/index';
 import PageHeader from 'components/page-header';
 import PageFooter from 'components/page-footer';
 import SiteNav from 'components/site-nav';
+import Nav from 'components/nav';
 import { getAllInterviews } from 'lib/interview';
 import siteConfig from 'content/site';
 import Helmet from 'components/helmet';
@@ -16,7 +17,7 @@ const PageDescription = "Get inspired by reading stories of folks who are workin
 const GuidesList = () => (
   <DefaultLayout>
     <Helmet title={PageTitle} desciption={PageDescription} />
-    <SiteNav />
+    <Nav />
     <PageHeader title={PageTitle} subtitle={PageDescription}>
       <BadgesList className="mt-4">
         <BadgeLink href={siteConfig.url.addInterview} target="_blank">
@@ -34,9 +35,9 @@ const GuidesList = () => (
       </BadgesList>
     </PageHeader>
     <div className="pt-5 pb-5 bg-light border-top">
-      <div className="container">
-        <div className="row">
-          { getAllInterviews().map((guide) => (
+      <div className="px-10">
+        <div className="grid grid-cols-12 gap-6">
+          {getAllInterviews().map((guide) => (
             <FeaturedGuide guide={guide} key={guide.url} />
           ))}
         </div>
