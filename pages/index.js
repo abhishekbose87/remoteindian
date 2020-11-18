@@ -8,6 +8,7 @@ import Logo from "components/logo"
 import SlackSection from "components/slack-section";
 import Testimonials from "components/testimonials";
 import CTA from "components/cta";
+import Sponsors from "components/sponsors";
 import DefaultLayout from 'layouts/default/index';
 
 const Home = (props) => (
@@ -20,6 +21,7 @@ const Home = (props) => (
     <SlackSection />
     <FeaturedContent />
     <Testimonials />
+    <Sponsors />
     <CTA/>
     <PageFooter />
   </DefaultLayout>
