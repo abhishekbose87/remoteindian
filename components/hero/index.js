@@ -8,7 +8,7 @@ const Hero = () => (
       <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
         <h2 className="mt-1 text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-3xl lg:text-4xl xl:text-5xl">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-            Remote Indian
+            RemoteIndian
           </span>
           <br className="hidden md:inline" />
           <span>
@@ -35,8 +35,8 @@ const Hero = () => (
               />
             </svg>
           </div>
-          <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl">
-            1200+ Members
+          <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl text-left">
+              1200+ Members
           </div>
         </div>
 
@@ -59,8 +59,8 @@ const Hero = () => (
               />
             </svg>
           </div>
-          <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl">
-            5000+ Messages exchanged monthly
+          <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl text-left">
+              5000+ Messages exchanged monthly
           </div>
         </div>
 
@@ -68,7 +68,7 @@ const Hero = () => (
       </div>
 
       {/* World illustration */}
-      <div className="col-span-6">
+      <div className="col-span-6 -mt-20">
         <div className="flex flex-col items-center">
           <div className="relative">
             {/* Halo effect */}
@@ -94,166 +94,203 @@ const Hero = () => (
               height="400"
               alt="Planet"
             />
-            {/* Static dots */}
+
+            <img
+              className="absolute max-w-full transform"
+              src="/homepage/planets/Group.png"
+              alt="You are in good company"
+              style={{ bottom: "6%", right: "17%" }}
+            />
+
+            {/* Dots */}
             <svg
-              className="absolute top-0 w-full h-auto"
-              viewBox="0 0 400 400"
-              style={{ left: "12%" }}
+              className="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+              width="416"
+              height="158"
+              viewBox="0 0 366 158"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs>
-                <filter
-                  x="-41.7%"
-                  y="-34.2%"
-                  width="183.3%"
-                  height="185.6%"
-                  filterUnits="objectBoundingBox"
-                  id="world-ill-a"
-                >
-                  <feOffset
-                    dy="4"
-                    in="SourceAlpha"
-                    result="shadowOffsetOuter1"
-                  />
-                  <feGaussianBlur
-                    stdDeviation="6"
-                    in="shadowOffsetOuter1"
-                    result="shadowBlurOuter1"
-                  />
-                  <feColorMatrix
-                    values="0 0 0 0 0 0 0 0 0 0.439215686 0 0 0 0 0.956862745 0 0 0 0.32 0"
-                    in="shadowBlurOuter1"
-                  />
-                </filter>
-                <filter
-                  x="-83.3%"
-                  y="-68.5%"
-                  width="266.7%"
-                  height="271.2%"
-                  filterUnits="objectBoundingBox"
-                  id="world-ill-c"
-                >
-                  <feOffset
-                    dy="4"
-                    in="SourceAlpha"
-                    result="shadowOffsetOuter1"
-                  />
-                  <feGaussianBlur
-                    stdDeviation="6"
-                    in="shadowOffsetOuter1"
-                    result="shadowBlurOuter1"
-                  />
-                  <feColorMatrix
-                    values="0 0 0 0 0 0 0 0 0 0.439215686 0 0 0 0 0.956862745 0 0 0 0.32 0"
-                    in="shadowBlurOuter1"
-                  />
-                </filter>
-                <filter
-                  x="-7.3%"
-                  y="-23.8%"
-                  width="114.5%"
-                  height="147.6%"
-                  filterUnits="objectBoundingBox"
-                  id="world-ill-e"
-                >
-                  <feGaussianBlur stdDeviation="2" in="SourceGraphic" />
-                </filter>
+              <g filter="url(#filter0_d)">
                 <ellipse
-                  id="world-ill-b"
-                  cx="51"
-                  cy="175.402"
-                  rx="24"
-                  ry="23.364"
-                />
-                <ellipse
-                  id="world-ill-d"
-                  cx="246"
-                  cy="256.201"
-                  rx="12"
-                  ry="11.682"
-                />
-                <linearGradient
-                  x1="50%"
-                  y1="0%"
-                  x2="50%"
-                  y2="100%"
-                  id="world-ill-f"
-                >
-                  <stop stopColor="#0070F4" stopOpacity="0" offset="0%" />
-                  <stop
-                    stopColor="#0070F4"
-                    stopOpacity=".64"
-                    offset="52.449%"
-                  />
-                  <stop stopColor="#0070F4" stopOpacity="0" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g transform="translate(0 -.818)" fill="none" fillRule="evenodd">
-                <use
-                  fill="#000"
-                  filter="url(#world-ill-a)"
-                  xlinkHref="#world-ill-b"
-                />
-                <use fill="#0070F4" xlinkHref="#world-ill-b" />
-                <use
-                  fill="#000"
-                  filter="url(#world-ill-c)"
-                  xlinkHref="#world-ill-d"
-                />
-                <use fill="#0070F4" xlinkHref="#world-ill-d" />
-                <ellipse
-                  fillOpacity=".32"
-                  fill="#0070F4"
-                  cx="293"
-                  cy="142.303"
-                  rx="8"
-                  ry="7.788"
-                />
-                <ellipse
-                  fillOpacity=".64"
-                  fill="#0070F4"
-                  cx="250"
-                  cy="187.083"
+                  cx="18"
+                  cy="13.8409"
                   rx="6"
-                  ry="5.841"
-                />
-                <ellipse
-                  fillOpacity=".64"
+                  ry="5.84091"
                   fill="#0070F4"
-                  cx="13"
-                  cy="233.811"
-                  rx="2"
-                  ry="1.947"
-                />
-                <ellipse
-                  fill="#0070F4"
-                  cx="29"
-                  cy="114.072"
-                  rx="2"
-                  ry="1.947"
-                />
-                <path
-                  d="M258 256.2l87-29.204"
-                  stroke="#666"
-                  strokeWidth="2"
-                  opacity=".16"
-                  filter="url(#world-ill-e)"
-                />
-                <path
-                  d="M258 251.333c111.333-40.237 141-75.282 89-105.136M136 103.364c66.667 4.543 104.667 32.45 114 83.72"
-                  stroke="url(#world-ill-f)"
-                  strokeWidth="2"
-                  strokeDasharray="2"
                 />
               </g>
+
+              {/* <g filter="url(#filter1_d)">
+                <path
+                  d="M251 108C251 112.301 247.418 115.788 243 115.788C238.582 115.788 235 112.301 235 108C235 103.699 238.582 100.212 243 100.212C247.418 100.212 251 103.699 251 108Z"
+                  fill="#0070F4"
+                />
+              </g> */}
+              {/* <g filter="url(#filter2_d)">
+                <ellipse
+                  cx="240"
+                  cy="135.841"
+                  rx="6"
+                  ry="5.84091"
+                  fill="#0070F4"
+                  fill-opacity="0.64"
+                />
+              </g> */}
+              <path
+                d="M251 108C251 108 493.066 67.8148 380.005 38"
+                stroke="url(#paint0_linear)"
+                stroke-width="2"
+                stroke-dasharray="2"
+              />
+              <path
+                d="M24 14C24 14 208.211 23.4419 234 130"
+                stroke="url(#paint1_linear)"
+                stroke-width="2"
+                stroke-dasharray="2"
+              />
+              <defs>
+                <filter
+                  id="filter0_d"
+                  x="0"
+                  y="0"
+                  width="36"
+                  height="35.6818"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="6" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0.439216 0 0 0 0 0.956863 0 0 0 0.32 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  />
+                </filter>
+                <filter
+                  id="filter1_d"
+                  x="223"
+                  y="92.2119"
+                  width="40"
+                  height="39.5758"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="6" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0.439216 0 0 0 0 0.956863 0 0 0 0.32 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  />
+                </filter>
+                <filter
+                  id="filter2_d"
+                  x="222"
+                  y="122"
+                  width="36"
+                  height="35.6818"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="6" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0.439216 0 0 0 0 0.956863 0 0 0 0.32 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="251"
+                  y1="38"
+                  x2="251"
+                  y2="108"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0070F4" stop-opacity="0.01" />
+                  <stop
+                    offset="0.524493"
+                    stop-color="#0070F4"
+                    stop-opacity="0.64"
+                  />
+                  <stop offset="1" stop-color="#0070F4" stop-opacity="0.01" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear"
+                  x1="24"
+                  y1="14"
+                  x2="24"
+                  y2="130"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0070F4" stop-opacity="0.01" />
+                  <stop
+                    offset="0.524493"
+                    stop-color="#0070F4"
+                    stop-opacity="0.64"
+                  />
+                  <stop offset="1" stop-color="#0070F4" stop-opacity="0.01" />
+                </linearGradient>
+              </defs>
             </svg>
+
             {/* Dynamic dots */}
             <svg
               className="absolute max-w-full"
               width="48"
               height="48"
               viewBox="0 0 48 48"
-              style={{ width: "12%", top: "45%", left: "50%" }}
+              style={{ width: "12%", top: "52%", left: "60%" }}
               xmlns="http://www.w3.org/2000/svg"
             >
               <g className="fill-current text-blue-600">
@@ -277,7 +314,7 @@ const Hero = () => (
               width="48"
               height="48"
               viewBox="0 0 48 48"
-              style={{ width: "12%", top: "19%", left: "46%" }}
+              style={{ width: "12%", top: "58%", left: "58%" }}
               xmlns="http://www.w3.org/2000/svg"
             >
               <g className="fill-current text-blue-600">
@@ -291,111 +328,28 @@ const Hero = () => (
                 <circle cx="24" cy="24" r="8" />
               </g>
             </svg>
-            {/* Avatars */}
-            <img
-              className="absolute max-w-full transform animate-float"
-              src="/homepage/planets/planet-avatar-01.png"
-              width="261"
-              height="105"
-              alt="Planet avatar 01"
-              style={{ width: "65.25%", top: "-3%", right: "-27%" }}
-            />
-            <img
-              className="absolute max-w-full transform animate-float animation-delay-1000"
-              src="/homepage/planets/planet-avatar-02.png"
-              width="355"
-              height="173"
-              alt="Planet avatar 02"
-              style={{ width: "88.7%", bottom: "-20%", right: "-18%" }}
-            />
-            {/* Black icon */}
-            <svg
-              className="absolute top-0 max-w-full w-20 h-auto rounded-full shadow-xl"
-              viewBox="0 0 80 80"
-              style={{ width: "20%", left: "6%" }}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                className="fill-current text-gray-800"
-                cx="40"
-                cy="40"
-                r="40"
-              />
-              <path
-                className="stroke-current text-white"
-                d="M30.19 41.221c7.074 3.299 12.957-4.7 20.03-1.401l1.769.824-1.419-3.883M43.988 50.877l3.887-1.41-1.769-.824c-2.19-1.021-3.475-2.651-4.42-4.512M38.724 36.91c-.944-1.86-2.23-3.49-4.42-4.512"
-                strokeLinecap="square"
-                strokeWidth="2"
-              />
-            </svg>
-            {/* Blue icon */}
-            <svg
-              className="absolute max-w-full w-16 h-auto rounded-full shadow-xl"
-              viewBox="0 0 64 64"
-              style={{ width: "16%", top: "32%", left: "-27%" }}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                className="fill-current text-blue-600"
-                cx="32"
-                cy="32"
-                r="32"
-              />
-              <path
-                className="stroke-current text-white"
-                d="M20.733 31.416l18.127-8.452M43.039 31.926L24.913 40.38"
-                strokeWidth="2"
-                fill="none"
-              />
-              <path
-                className="stroke-current text-white"
-                strokeLinecap="square"
-                d="M32.238 20.595l6.622 2.369-2.442 6.594M31.534 42.747l-6.621-2.368 2.442-6.595"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
-            {/* White icon */}
-            <svg
-              className="absolute max-w-full w-16 h-auto rounded-full shadow-xl"
-              viewBox="0 0 64 64"
-              style={{ width: "16%", top: "55%", right: "-16%" }}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                className="fill-current text-gray-100"
-                fill="#FBFBFB"
-                cx="32"
-                cy="32"
-                r="32"
-              />
-              <path
-                className="fill-current text-gray-700"
-                d="M37.11 32.44l-1.69 4.646-8.458-3.078.676-1.859-4.773 1.42 2.744 4.156.677-1.858 9.396 3.42a.994.994 0 001.278-.587l2.03-5.576-1.88-.684zM27.037 30.878l1.691-4.646 8.457 3.078-.676 1.858 4.773-1.42-2.744-4.155-.676 1.858-9.397-3.42a.994.994 0 00-1.278.587l-2.03 5.576 1.88.684z"
-              />
-            </svg>
           </div>
         </div>
 
         <div className="mt-6 flex flex-wrap lg:mt-8 w-full justify-center text-center">
-          <div className="flex flex-col w-24 mb-2 items-center">
+          <div className="flex flex-col w-16 mb-2 items-center">
             <img src="/homepage/companies/todoist-logo.png" alt="Todoist" />
-            <div>Todoist</div>
+            <div className="text-sm justify-self-end">Todoist</div>
           </div>
-          <div className="flex flex-col w-24 mb-2 items-center">
+          <div className="flex flex-col w-16 mb-2 items-center">
             <img src="/homepage/companies/gumroad-logo.png" alt="Gumroad" />
-            <div>Gumroad</div>
+            <div className="text-sm justify-self-end">Gumroad</div>
           </div>
-          <div className="flex flex-col w-24 mb-2 items-center">
+          <div className="flex flex-col w-16 mb-2 items-center">
             <img src="/homepage/companies/prisma-logo.png" alt="Prisma" />
-            <div>Prisma</div>
+            <div className="text-sm justify-self-end">Prisma</div>
           </div>
-          <div className="flex flex-col w-24 mb-2 items-center">
+          <div className="flex flex-col w-16 mb-2 items-center">
             <img
-              src="/homepage/companies/browserstack-logo.png"
+              src="/homepage/companies/gitlab-logo.png"
               alt="Browser Stack"
             />
-            <div>Browser Stack</div>
+            <div className="text-sm justify-self-end">Gitlab</div>
           </div>
           <div className="flex flex-col w-1/5 mb-2 items-center">
             <img
@@ -403,7 +357,7 @@ const Hero = () => (
               src="/homepage/companies/remo-logo.png"
               alt="Remo"
             />
-            <div className="align-bottom">Remo</div>
+            <div className="text-sm justify-self-end">Remo</div>
           </div>
         </div>
       </div>
