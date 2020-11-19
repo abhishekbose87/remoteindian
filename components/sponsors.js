@@ -1,38 +1,69 @@
 const Sponsors = () => {
   return (
-    <div className="bg-white">
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
-        <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-          A community that is accessible for everyone
-        </h2>
-        <p className="text-base leading-6 font-semibold uppercase text-gray-600 tracking-wider">
-          The RemoteIndian project is made possible because of the support of
-          sponsors and patrons.
-        </p>
-        <div className="mt-6 grid grid-cols-12  gap-0.5 lg:mt-8">
-          <div className="col-span-6 flex flex-col items-center">
+    <section>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="py-6 md:py-10"></div>
+        {/* Section header */}
+        <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
+          <h1 className="h2 mb-4">
+            A community that is accessible for everyone
+          </h1>
+          <p className="text-lg text-gray-600">
+            A big thanks to our sponsors and patrons for supporting the
+            development of the RemoteIndian project.
+          </p>
+        </div>
+
+        <div className="mt-6 grid grid-cols-2 gap-0.5 lg:mt-8 items-center justify-center justify-items-center">
+          <div className="flex flex-col items-center">
             <img
-              className="self-center"
+              className=""
               src="/homepage/patrons/scalereal.png"
               alt="Todoist"
             />
-            <div>Build applications that scale beyond reality</div>
           </div>
-          <div className="col-span-6 flex flex-col items-center">
+          <div className="flex flex-col items-center flex-grow">
             <img
-              className="self-center"
+              className=""
               src="/homepage/patrons/vertistudio.png"
               alt="Todoist"
             />
-            <div>Home of real people who love WordPress and beyond</div>
+          </div>
+          <div className="h4 text-base">
+            Build applications that scale beyond reality{" "}
+            <a href="https://scalereal.com/">
+              <svg
+                className="fill-current w-6 h-6 mr-2 inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </a>
+          </div>
+          <div className="h4 text-base">
+            Home of real people who love WordPress and beyond{" "}
+            <a href="https://vertistudio.com/">
+              <svg
+                className="fill-current w-6 h-6 mr-2 inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </a>
           </div>
         </div>
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center my-10 mt-20">
           <img className="" src="/homepage/patrons/patrons.png" alt="Todoist" />
-          <h2>&nbsp;and 40+ Patrons</h2>
+          <h2 className="h4">&nbsp;and 30+ Patrons</h2>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

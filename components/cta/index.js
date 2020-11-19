@@ -10,8 +10,8 @@ const CTA = () => {
               <h2 className="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10">
                 <span className="block">Ready to join the tribe?</span>
               </h2>
-              <p className="mt-4 text-lg leading-6 text-indigo-200">
-                Also, unlock perks from our awesome partners 👉 Krisp.ai,
+              <p className="mt-4 text-md leading-6 text-indigo-200">
+                Also, unlock perks from our awesome partners - Krisp.ai,
                 RemoteLeaf and Brain.fm
               </p>
               <SignupForm />
