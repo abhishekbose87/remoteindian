@@ -6,6 +6,11 @@ import { getFeaturedGuides } from 'lib/guide';
 const FeaturedGuides = () => (
   <FeaturedContentWrap className="featured-content-wrap">
     <div className="mx-10">
+      <div className="swim-lane grid grid-cols-12 gap-6">
+        {getFeaturedGuides().map((guide) => (
+          <FeaturedGuide guide={guide} key={guide.url} />
+        ))}
+      </div>
       <p className="hidden md:block border-through featured-separator">
         <span>
           Guides most visited by the community&nbsp;
@@ -20,11 +25,6 @@ const FeaturedGuides = () => (
           View all Guides &rarr;
         </a>
       </p>
-      <div className="swim-lane grid grid-cols-12 gap-6">
-        {getFeaturedGuides().map((guide) => (
-          <FeaturedGuide guide={guide} key={guide.url} />
-        ))}
-      </div>
     </div>
   </FeaturedContentWrap>
 );

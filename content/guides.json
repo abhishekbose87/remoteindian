@@ -34,7 +34,7 @@
     "description": "Why Toptal is a highly rated freelance marketplace and how to get in?",
     "url": "/guides/toptal",
     "fileName": "toptal",
-    "featured": true,
+    "featured": false,
     "author": "avi87",
     "updatedAt": "2020-09-21T15:48:21.191Z",
     "createdAt": "2020-09-21T15:48:21.191Z"
@@ -44,7 +44,7 @@
     "description": "Don't go bankrupt in one accident.",
     "url": "/guides/insurance",
     "fileName": "insurance",
-    "featured": true,
+    "featured": false,
     "author": "avi87",
     "updatedAt": "2020-03-14T15:48:21.191Z",
     "createdAt": "2020-03-14T15:48:21.191Z"

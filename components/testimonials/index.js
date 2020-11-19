@@ -2,7 +2,7 @@ const Testimonials = () => {
   return (
     <section>
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      <div className="py-12 md:py-20">
+      <div className="py-6 md:py-10">
       {/* Section header */}
       <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
         <h1 className="h2 mb-4">A community that works for you</h1>
@@ -39,7 +39,7 @@ const Testimonials = () => {
 
 const Testimonial = (props) => {
   return (
-    <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16">
+    <div className="py-6 px-4 sm:px-6 md:flex md:flex-col md:py-8">
       <blockquote className="mt-8 md:flex md:flex-col p-6 bg-gray-200">
         <div className="relative leading-7 font-medium gray-700 md:flex-grow">
           <svg

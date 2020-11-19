@@ -85,7 +85,7 @@ Can DM me if you have any questions.
   ];
 
   return (
-    <section className="relative">
+    <section className="relative my-12 mb-20">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 bg-gray-100 pointer-events-none mb-16"
@@ -165,7 +165,7 @@ Can DM me if you have any questions.
                   setTab(2);
                 }}
               >
-                <div>
+                <div className="flex-grow">
                   <div className="font-bold leading-snug tracking-tight mb-1">
                     Get help on setting up a productive workspace
                   </div>
