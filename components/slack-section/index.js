@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Transition from "../utils/Transition.js";
+import Transition from "components/utils/Transition.js";
 
 function SlackSection() {
  
@@ -252,7 +252,7 @@ Can DM me if you have any questions.
                 <div className="relative inline-flex flex-col">
                   <div className="md:max-w-none mx-auto rounded">
                     {job_messages.map((message) => (
-                      <SlackMessage id={message.id} message={message} />
+                      <SlackMessage key={message.id} message={message} />
                     ))}
                   </div>
                 </div>

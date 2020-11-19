@@ -58,7 +58,7 @@ const Sponsors = () => {
             </a>
           </div>
         </div>
-        <div class="flex justify-center items-center my-10 mt-20">
+        <div className="flex justify-center items-center my-10 mt-20">
           <img className="" src="/homepage/patrons/patrons.png" alt="Todoist" />
           <h2 className="h4">&nbsp;and 30+ Patrons</h2>
         </div>

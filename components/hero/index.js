@@ -140,14 +140,14 @@ const Hero = () => (
               <path
                 d="M251 108C251 108 493.066 67.8148 380.005 38"
                 stroke="url(#paint0_linear)"
-                stroke-width="2"
-                stroke-dasharray="2"
+                strokeWidth="2"
+                strokeDasharray="2"
               />
               <path
                 d="M24 14C24 14 208.211 23.4419 234 130"
                 stroke="url(#paint1_linear)"
-                stroke-width="2"
-                stroke-dasharray="2"
+                strokeWidth="2"
+                strokeDasharray="2"
               />
               <defs>
                 <filter
@@ -157,9 +157,9 @@ const Hero = () => (
                   width="36"
                   height="35.6818"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"
@@ -190,9 +190,9 @@ const Hero = () => (
                   width="40"
                   height="39.5758"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"
@@ -223,9 +223,9 @@ const Hero = () => (
                   width="36"
                   height="35.6818"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"
@@ -257,13 +257,13 @@ const Hero = () => (
                   y2="108"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#0070F4" stop-opacity="0.01" />
+                  <stop stopColor="#0070F4" stopOpacity="0.01" />
                   <stop
                     offset="0.524493"
-                    stop-color="#0070F4"
-                    stop-opacity="0.64"
+                    stopColor="#0070F4"
+                    stopOpacity="0.64"
                   />
-                  <stop offset="1" stop-color="#0070F4" stop-opacity="0.01" />
+                  <stop offset="1" stopColor="#0070F4" stopOpacity="0.01" />
                 </linearGradient>
                 <linearGradient
                   id="paint1_linear"
@@ -273,13 +273,13 @@ const Hero = () => (
                   y2="130"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#0070F4" stop-opacity="0.01" />
+                  <stop stopColor="#0070F4" stopOpacity="0.01" />
                   <stop
                     offset="0.524493"
-                    stop-color="#0070F4"
-                    stop-opacity="0.64"
+                    stopColor="#0070F4"
+                    stopOpacity="0.64"
                   />
-                  <stop offset="1" stop-color="#0070F4" stop-opacity="0.01" />
+                  <stop offset="1" stopColor="#0070F4" stopOpacity="0.01" />
                 </linearGradient>
               </defs>
             </svg>
