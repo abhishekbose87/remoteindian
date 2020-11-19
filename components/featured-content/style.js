@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const FeaturedWrap = styled.div`
-  /* padding: 30px 0 50px; */
-  padding: 20px 0 0;
+  padding: 30px 0 50px;
 `;
 
 export const FeaturedContentWrap = styled.div`

@@ -151,3 +151,14 @@ a[type="button"]:hover {
 .pulse-2 {
     animation-delay: -6000ms;
 }
+
+h1.header{
+  @apply text-5xl font-bold text-gray-800;
+  line-height: 125%;
+}
+
+p.tagline{
+  @apply text-base text-gray-700;
+  line-height: 130%;
+  margin-top: 31px;
+}

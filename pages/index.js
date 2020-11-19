@@ -15,16 +15,17 @@ import DefaultLayout from 'layouts/default/index';
 const Home = (props) => (
   <DefaultLayout>
     <Helmet />
-    <Nav/>
+    <SiteNav />
+    {/* <Nav /> */}
     <Hero />
-    {/* <Logo /> */}
-    {/* <SiteNav />
-    <HeroSection /> */}
+
+    {/*<HeroSection /> */}
     <SlackSection />
+    <Logo />
     <FeaturedContent />
     <Testimonials />
     <Sponsors />
-    <CTA/>
+    <CTA />
     <PageFooter />
   </DefaultLayout>
 );

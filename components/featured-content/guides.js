@@ -4,7 +4,7 @@ import FeaturedGuide from 'components/featured-guide';
 import { getFeaturedGuides } from 'lib/guide';
 
 const FeaturedGuides = () => (
-  <FeaturedContentWrap className="featured-content-wrap">
+  <FeaturedContentWrap className="featured-content-wrap mb-10">
     <div className="mx-10">
       <div className="swim-lane grid grid-cols-12 gap-6">
         {getFeaturedGuides().map((guide) => (

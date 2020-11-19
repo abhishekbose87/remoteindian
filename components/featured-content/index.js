@@ -5,21 +5,21 @@ import FeaturedInterviews from './interviews';
 
 const FeaturedContent = (props) => (
   <section>
-    <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      <div className="py-6 md:py-10">
+    <div className="mx-auto">
+      <div className="py-6 md:py-10 ">
         {/* Section header */}
-        <div className="max-w-3xl mx-auto text-center ">
-          <h2 className="h2 mb-4">
-            A community of peer learning
-          </h2>
-          <p className="text-xl text-gray-600">
-            Easy to follow guides on complex topics written and maintained by
-            the community
+        <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
+          <h1 className="header">A community of peer learning</h1>
+          <h1 className="header">and sharing knowledge</h1>
+          <p className="tagline">
+            Learn through the experience of folks who have been doing remote work for
+            a while.
           </p>
         </div>
 
-        <FeaturedWrap className="">
+        <FeaturedWrap>
           <FeaturedGuides />
+          <FeaturedInterviews />
         </FeaturedWrap>
       </div>
     </div>

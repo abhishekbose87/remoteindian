@@ -54,7 +54,7 @@
     "description": "Switch your mood with the right track.",
     "url": "/guides/music-for-productivity",
     "fileName": "music-for-productivity",
-    "featured": true,
+    "featured": false,
     "author": "avi87",
     "updatedAt": "2020-07-20T15:48:21.191Z",
     "createdAt": "2020-07-20T15:48:21.191Z"
@@ -64,7 +64,7 @@
     "description": "How to make 'work from home' work for you",
     "url": "/guides/work-from-home",
     "fileName": "work-from-home",
-    "featured": true,
+    "featured": false,
     "author": "avi87",
     "updatedAt": "2020-07-20T15:48:21.191Z",
     "createdAt": "2020-07-20T15:48:21.191Z"
@@ -74,7 +74,7 @@
     "description": "\"In order to succeed, you must first survive.\" - Warren Buffet",
     "url": "/guides/risk-taking",
     "fileName": "risk-taking",
-    "featured": true,
+    "featured": false,
     "author": "avi87",
     "updatedAt": "2020-07-27T15:48:21.191Z",
     "createdAt": "2020-07-27T15:48:21.191Z"

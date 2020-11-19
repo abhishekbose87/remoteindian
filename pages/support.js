@@ -3,7 +3,7 @@ import SupportHeader from "components/support-header";
 import Modal from "components/modal";
 import { Mark } from "components/mark";
 import DefaultLayout from "layouts/default/index";
-import Nav from "components/nav";
+import SiteNav from "components/site-nav";
 import PageFooter from "components/page-footer/index";
 
 import { supabase } from "../lib/supabase/api";
@@ -86,7 +86,7 @@ export default function Support({
         title="🙏 Please consider supporting the RemoteIndian Project"
         description="Your contribution keeps the community independent and inclusive for everyone 🤗"
       />
-      <Nav />
+      <SiteNav />
       <div className="text-sm md:text-base">
         <SupportHeader />
         <div className="grid grid-rows-auto mt-4">

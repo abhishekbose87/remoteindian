@@ -22,9 +22,7 @@ class DefaultLayout extends React.Component {
         <div className={ classNames('body-wrap', { 'sponsor-banner-visible': !this.state.isBannerClosed }) }>
         </div> */}
         <div className="relative bg-white overflow-hidden">
-          <div className="relative pt-6 pb-8 md:pb-10 lg:pb-12 xl:pb-16">
             {this.props.children}
-          </div>
         </div>
       </div>
     );

@@ -107,9 +107,9 @@ Can DM me if you have any questions.
         <div className="pt-12 md:pt-20"></div>
 
         {/* Section header */}
-        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-          <h1 className="h2 mb-4">A community of super helpful people</h1>
-          <p className="text-xl text-gray-600">
+        <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
+          <h1 className="header">A community of super helpful people</h1>
+          <p className="tagline">
             Remote working can be a solitary endeavor. But, if you can find the
             right support network, it becomes easier, more productive and more
             joyful.
@@ -117,19 +117,19 @@ Can DM me if you have any questions.
         </div>
 
         {/* Section content */}
-        <div className="md:grid md:grid-cols-12 md:gap-6">
+        <div className="md:grid md:grid-cols-12 md:gap-6 content-start">
           {/* Content */}
           <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 md:mt-6"
+            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-4"
             data-aos="fade-right"
           >
             {/* Tabs buttons */}
             <div className="mb-8 md:mb-0">
               <a
-                className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                   tab !== 1
-                    ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                    : "bg-gray-200 border-transparent"
+                    ? "bg-gray-200 border-transparent"
+                    : "bg-white shadow-md border-gray-200 hover:shadow-lg"
                 }`}
                 href="#0"
                 onClick={(e) => {
@@ -137,16 +137,7 @@ Can DM me if you have any questions.
                   setTab(1);
                 }}
               >
-                <div>
-                  <div className="font-bold leading-snug tracking-tight mb-1">
-                    Find jobs before they are advertised on a job board
-                  </div>
-                  <div className="text-gray-600 text-sm">
-                    High quality leads shared by members who are working in
-                    awesome remote companies
-                  </div>
-                </div>
-                <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 mr-3">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -162,12 +153,21 @@ Can DM me if you have any questions.
                     />
                   </svg>
                 </div>
+                <div className="flex-grow-1">
+                  <div className="font-bold leading-snug tracking-tight mb-1">
+                    Find jobs before they are advertised on a job board
+                  </div>
+                  <div className="text-gray-600 text-sm">
+                    High quality leads shared by members who are working in
+                    awesome remote companies
+                  </div>
+                </div>
               </a>
               <a
                 className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                   tab !== 2
-                    ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                    : "bg-gray-200 border-transparent"
+                    ? "bg-gray-200 border-transparent"
+                    : "bg-white shadow-md border-gray-200 hover:shadow-lg"
                 }`}
                 href="#0"
                 onClick={(e) => {
@@ -175,15 +175,7 @@ Can DM me if you have any questions.
                   setTab(2);
                 }}
               >
-                <div className="flex-grow">
-                  <div className="font-bold leading-snug tracking-tight mb-1">
-                    Get help on setting up a productive workspace
-                  </div>
-                  <div className="text-gray-600 text-sm">
-                    Find useful tools and info to make remote work work for you.
-                  </div>
-                </div>
-                <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 mr-3">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -199,12 +191,20 @@ Can DM me if you have any questions.
                     />
                   </svg>
                 </div>
+                <div className="flex-grow">
+                  <div className="font-bold leading-snug tracking-tight mb-1">
+                    Get help on setting up a productive workspace
+                  </div>
+                  <div className="text-gray-600 text-sm">
+                    Find useful tools and info to make remote work work for you.
+                  </div>
+                </div>
               </a>
               <a
                 className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                   tab !== 3
-                    ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                    : "bg-gray-200 border-transparent"
+                    ? "bg-gray-200 border-transparent"
+                    : "bg-white shadow-md border-gray-200 hover:shadow-lg"
                 }`}
                 href="#0"
                 onClick={(e) => {
@@ -212,15 +212,7 @@ Can DM me if you have any questions.
                   setTab(3);
                 }}
               >
-                <div>
-                  <div className="font-bold leading-snug tracking-tight mb-1">
-                    Overcome lack of information on taxation and getting paid
-                  </div>
-                  <div className="text-gray-600 text-sm">
-                    For eg. How to accept payment from foreign clients?
-                  </div>
-                </div>
-                <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 mr-3">
                   <svg
                     className="w-8 h-8"
                     fill="none"
@@ -236,13 +228,21 @@ Can DM me if you have any questions.
                     />
                   </svg>
                 </div>
+                <div>
+                  <div className="font-bold leading-snug tracking-tight mb-1">
+                    Overcome lack of information on taxation and getting paid
+                  </div>
+                  <div className="text-gray-600 text-sm">
+                    For eg. How to accept payment from foreign clients?
+                  </div>
+                </div>
               </a>
             </div>
           </div>
 
           {/* Tabs items */}
           <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 mb-8 md:mb-0 md:order-1 bg-white shadow-md border-gray-200 hover:shadow-lg p-4 -mt-10"
+            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-8 mb-8 md:mb-0 md:order-1 bg-white shadow-md border-gray-200 hover:shadow-lg p-4"
             data-aos="zoom-y-out"
             ref={tabs}
           >
