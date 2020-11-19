@@ -29,7 +29,7 @@ const Sponsors = () => {
               alt="Todoist"
             />
           </div>
-          <div className="h4 text-base">
+          <div className="h4 text-base mt-2">
             Build applications that scale beyond reality{" "}
             <a href="https://scalereal.com/">
               <svg
@@ -43,7 +43,7 @@ const Sponsors = () => {
               </svg>
             </a>
           </div>
-          <div className="h4 text-base">
+          <div className="h4 text-base mt-2">
             Home of real people who love WordPress and beyond{" "}
             <a href="https://vertistudio.com/">
               <svg
@@ -60,7 +60,7 @@ const Sponsors = () => {
         </div>
         <div className="flex justify-center items-center my-10 mt-20">
           <img className="" src="/homepage/patrons/patrons.png" alt="Todoist" />
-          <h2 className="h4">&nbsp;and 30+ Patrons</h2>
+          <h2 className="h4 text-md">&nbsp;and 30+ patrons</h2>
         </div>
       </div>
     </section>

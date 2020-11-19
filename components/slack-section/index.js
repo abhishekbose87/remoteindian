@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Transition from "components/utils/Transition.js";
+import Transition from "../utils/transition.js";
 
 function SlackSection() {
  
@@ -15,12 +15,14 @@ I am using PayPal and the fees are really horrible, how do you guys accept payme
 Also I don’t know anything about legalities of paperwork and taxes necessary, any suggestions of what’s necessary?
 `,
       userName: "Abhishek",
+      imageId: "abhi",
     },
     {
       id: 2,
       text: `We used Xoom for the first payment but then client’s account was blocked as it is for personal use only. Not commercially. Then we used transferwise. It has lowest fees and also trustworthy. As for the taxes part, if you’re planning to continue this only then I suggest consult a CA, it will come a long way. He will suggest ways to save taxes and everything.
 `,
       userName: "Dhanraj",
+      imageId: "dhanraj",
     },
     {
       id: 3,
@@ -30,6 +32,7 @@ Transferwise is probably the other best option. But client needs to have an acco
 The other thing people have tried and liked (me included) is Payoneer. That gives you a US / UK bank account - so your client can pay locally and money gets converted to your Indian bank account.
 `,
       userName: "Saurabh",
+      imageId: "saurabh",
     },
   ];
 
@@ -39,24 +42,28 @@ The other thing people have tried and liked (me included) is Payoneer. That give
       text: `How would you go about buying a brand new desktop today? I am seeing All-in-One PCs which aren't very exciting. Lenovo's website makes it really difficult to discover PCs that would serve your needs. Looking for i5 and above, 8GB and above, 128GB SSD, and Windows 10.
 `,
       userName: "Amit",
+      imageId: "amit",
     },
     {
       id: 2,
       text: `I would order components from amazon or flipkart and assemble it on my own. I recently ordered some components from mdcomputers. If you're looking for pre-built pc then ant-pc.com or easypc.in would be suitable. You can refer this website https://assembleyourpc.net/ for choosing a configuration
 `,
       userName: "Muzammil",
+      imageId: "muzammil",
     },
     {
       id: 3,
       text: `I use https://pcpartpicker.com/, make my part list and assemble. Assembled ones are way better value than branded, all-in-one ones. Here's a part list for something i assembled a few years back and that i use for work now
 https://pcpartpicker.com/user/abhikrk/saved/#view=vh9sJx`,
       userName: "Abhik",
+      imageId: "abhik",
     },
     {
       id: 4,
       text: `Some amazing links here. @Amit S. which city are you based out of? If you are in one of the larger cities, you may even get better pricing from physical stores compared to online retailers.
 If you are in Pune, can send you the number of my wholesale person in Pune - he generally has quite good prices.`,
       userName: "Saurabh",
+      imageId: "saurabh",
     },
   ];
 
@@ -70,17 +77,20 @@ This is the list of openings: https://angel.co/company/remo-co/jobs
 Can DM me if you have any questions.
 `,
       userName: "Ashwin",
+      imageId: "ashwin",
     },
     {
       id: 2,
       text: `Tribe, Small announcement and a big shoutout to RI 🙏 I’ve recently signed a full time contract with Remo. This wouldn’t have been possible otherwise. I have been a part of the community since an year now, the amount of knowledge and consciousness one could gain from RI is priceless (I’m sure almost every other post made across channels has something in store for someone ❤). It’s very hard to settle for less along with consistent discomfort from the toxic work culture and pay I have been through in Consulting and Product companies across in non-remote jobs. With one of the best cultures I’ve ever experienced I could definitely say with current remote gig I overcame those issues i have faced. Excited about the future 🚀
 `,
-      userName: "Bharadwaj P",
+      userName: "Bhardwaj",
+      imageId: "bhardwaj",
     },
     {
       id: 3,
       text: `Hi everyone, I have also joined in Remo as a full stack developer for full time contract. Big thanks to this community (great place to learn about remote culture)`,
       userName: "Chandravadanan",
+      imageId: "chan",
     },
   ];
 
@@ -272,7 +282,7 @@ Can DM me if you have any questions.
                 <div className="relative inline-flex flex-col">
                   <div className="md:max-w-none mx-auto rounded">
                     {gear_messages.map((message) => (
-                      <SlackMessage id={message.id} message={message} />
+                      <SlackMessage key={message.id} message={message} />
                     ))}
                   </div>
                 </div>
@@ -292,7 +302,7 @@ Can DM me if you have any questions.
                 <div className="relative inline-flex flex-col">
                   <div className="md:max-w-none mx-auto rounded">
                     {finance_messages.map((message) => (
-                      <SlackMessage id={message.id} message={message} />
+                      <SlackMessage key={message.id} message={message} />
                     ))}
                   </div>
                 </div>
@@ -308,7 +318,7 @@ const SlackMessage = ({message}) => {
   return (
     <div className="flex items-start mb-4 text-sm">
       <img
-        src="https://pbs.twimg.com/profile_images/875010472105222144/Pkt9zqPY_400x400.jpg"
+        src={`/homepage/slack-threads/${message.imageId}.jpg`}
         className="w-10 h-10 rounded mr-3"
       />
       <div className="flex-1 overflow-hidden">
