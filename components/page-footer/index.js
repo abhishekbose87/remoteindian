@@ -37,7 +37,7 @@ const PageFooter = () => (
             </p>
           </div>
         </div>
-        <div className="site-contribute foot-col col-span-12 md:col-span-2">
+        {/* <div className="site-contribute foot-col col-span-12 md:col-span-2">
           <ul>
             <li className="foot-header">Contribute</li>
             <li>
@@ -56,8 +56,8 @@ const PageFooter = () => (
               </a>
             </li>
           </ul>
-        </div>
-        <div className="site-contribute foot-col col-span-12 md:col-span-4">
+        </div> */}
+        <div className="site-contribute foot-col col-span-12 md:col-span-6">
           <ul>
             <li className="foot-header">Credits</li>
             <li>

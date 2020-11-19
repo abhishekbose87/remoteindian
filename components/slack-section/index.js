@@ -212,7 +212,7 @@ Can DM me if you have any questions.
                 </div>
                 <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                   <svg
-                    className="object-fill"
+                    className="w-8 h-8"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -232,7 +232,7 @@ Can DM me if you have any questions.
 
           {/* Tabs items */}
           <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 mb-8 md:mb-0 md:order-1"
+            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 mb-8 md:mb-0 md:order-1 bg-white shadow-md border-gray-200 hover:shadow-lg p-4 -mt-10"
             data-aos="zoom-y-out"
             ref={tabs}
           >

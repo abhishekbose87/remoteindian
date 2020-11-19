@@ -11,17 +11,16 @@ const CTA = () => {
                 <span className="block">Ready to join the tribe?</span>
               </h2>
               <p className="mt-4 text-lg leading-6 text-indigo-200">
-                Join the tribe and make remote working work for you. Also,
-                unlock perks from our awesome partners - Krisp.ai, RemoteLeaf
-                and Brain.fm
+                Also, unlock perks from our awesome partners 👉 Krisp.ai,
+                RemoteLeaf and Brain.fm
               </p>
-              <SignupForm/>
+              <SignupForm />
             </div>
           </div>
           <div className="relative pb-3/5 -mt-6 md:pb-1/2">
             <img
               className="absolute inset-0 w-full h-full transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-              src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
+              src="/homepage/slack_screenshot.png"
               alt="App screenshot"
             />
           </div>
