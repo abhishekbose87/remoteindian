@@ -7,15 +7,82 @@ function SlackSection() {
 
   const tabs = useRef(null);
 
-  const message= {
-    id: 1,  
-    text: `How would you go about buying a brand new desktop today? I
-                    am seeing All-in-One PCs which aren't very exciting.
-                    Lenovo's website makes it really difficult to discover PCs
-                    that would serve your needs. Looking for i5 and above, 8GB
-                    and above, 128GB SSD, and Windows 10.`,
-    userName: "amit" 
-  }
+  const finance_messages = [
+    {
+      id: 1,
+      text: `Hi guys, I just left my job and started freelancing.
+I am using PayPal and the fees are really horrible, how do you guys accept payments from foreign clients (Mostly US based companies)?
+Also I don’t know anything about legalities of paperwork and taxes necessary, any suggestions of what’s necessary?
+`,
+      userName: "Abhishek",
+    },
+    {
+      id: 2,
+      text: `We used Xoom for the first payment but then client’s account was blocked as it is for personal use only. Not commercially. Then we used transferwise. It has lowest fees and also trustworthy. As for the taxes part, if you’re planning to continue this only then I suggest consult a CA, it will come a long way. He will suggest ways to save taxes and everything.
+`,
+      userName: "Dhanraj",
+    },
+    {
+      id: 3,
+      text: `Welcome to the group! There are a couple of good threads on #finance regarding your queries.
+The general consensus on this group has been: 1) Bank wire transfers are best if your client agrees to it. You should set up an EEFC account. ICICI generally has good conversion rates.
+Transferwise is probably the other best option. But client needs to have an account as well.
+The other thing people have tried and liked (me included) is Payoneer. That gives you a US / UK bank account - so your client can pay locally and money gets converted to your Indian bank account.
+`,
+      userName: "Saurabh",
+    },
+  ];
+
+  const gear_messages = [
+    {
+      id: 1,
+      text: `How would you go about buying a brand new desktop today? I am seeing All-in-One PCs which aren't very exciting. Lenovo's website makes it really difficult to discover PCs that would serve your needs. Looking for i5 and above, 8GB and above, 128GB SSD, and Windows 10.
+`,
+      userName: "Amit",
+    },
+    {
+      id: 2,
+      text: `I would order components from amazon or flipkart and assemble it on my own. I recently ordered some components from mdcomputers. If you're looking for pre-built pc then ant-pc.com or easypc.in would be suitable. You can refer this website https://assembleyourpc.net/ for choosing a configuration
+`,
+      userName: "Muzammil",
+    },
+    {
+      id: 3,
+      text: `I use https://pcpartpicker.com/, make my part list and assemble. Assembled ones are way better value than branded, all-in-one ones. Here's a part list for something i assembled a few years back and that i use for work now
+https://pcpartpicker.com/user/abhikrk/saved/#view=vh9sJx`,
+      userName: "Abhik",
+    },
+    {
+      id: 4,
+      text: `Some amazing links here. @Amit S. which city are you based out of? If you are in one of the larger cities, you may even get better pricing from physical stores compared to online retailers.
+If you are in Pune, can send you the number of my wholesale person in Pune - he generally has quite good prices.`,
+      userName: "Saurabh",
+    },
+  ];
+
+  const job_messages = [
+    {
+      id: 1,
+      text: `Hi Folks, Hiring for multiple roles at Remo. Please let me know if anyone is interested. We are looking to hire people who have proven to be the best in their respective fields.
+
+This is the list of openings: https://angel.co/company/remo-co/jobs
+
+Can DM me if you have any questions.
+`,
+      userName: "Ashwin",
+    },
+    {
+      id: 2,
+      text: `Tribe, Small announcement and a big shoutout to RI 🙏 I’ve recently signed a full time contract with Remo. This wouldn’t have been possible otherwise. I have been a part of the community since an year now, the amount of knowledge and consciousness one could gain from RI is priceless (I’m sure almost every other post made across channels has something in store for someone ❤). It’s very hard to settle for less along with consistent discomfort from the toxic work culture and pay I have been through in Consulting and Product companies across in non-remote jobs. With one of the best cultures I’ve ever experienced I could definitely say with current remote gig I overcame those issues i have faced. Excited about the future 🚀
+`,
+      userName: "Bharadwaj P",
+    },
+    {
+      id: 3,
+      text: `Hi everyone, I have also joined in Remo as a full stack developer for full time contract. Big thanks to this community (great place to learn about remote culture)`,
+      userName: "Chandravadanan",
+    },
+  ];
 
   return (
     <section className="relative">
@@ -43,17 +110,9 @@ function SlackSection() {
         <div className="md:grid md:grid-cols-12 md:gap-6">
           {/* Content */}
           <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 md:mt-6"
             data-aos="fade-right"
           >
-            {/* <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-              <h3 className="h3 mb-3">A community of super helpful people</h3>
-              <p className="text-xl text-gray-600">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa.
-              </p>
-            </div> */}
             {/* Tabs buttons */}
             <div className="mb-8 md:mb-0">
               <a
@@ -70,19 +129,27 @@ function SlackSection() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-tight mb-1">
-                    #gear
+                    Find jobs before they are advertised on a job board
                   </div>
-                  <div className="text-gray-600">
-                    High quality information to setup a productive workspace
+                  <div className="text-gray-600 text-sm">
+                    High quality leads shared by members who are working in
+                    awesome remote companies
                   </div>
                 </div>
                 <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                   <svg
-                    className="w-3 h-3 fill-current"
-                    viewBox="0 0 12 12"
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
                   </svg>
                 </div>
               </a>
@@ -100,22 +167,25 @@ function SlackSection() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-tight mb-1">
-                    Building the Simple ecosystem
+                    Get help on setting up a productive workspace
                   </div>
-                  <div className="text-gray-600">
-                    Take collaboration to the next level with security and
-                    administrative features built for teams.
+                  <div className="text-gray-600 text-sm">
+                    Find useful tools and info to make remote work work for you.
                   </div>
                 </div>
                 <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                   <svg
-                    className="w-3 h-3 fill-current"
-                    viewBox="0 0 12 12"
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"
-                      fillRule="nonzero"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
                 </div>
@@ -134,23 +204,25 @@ function SlackSection() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-tight mb-1">
-                    Building the Simple ecosystem
+                    Overcome lack of information on taxation and getting paid
                   </div>
-                  <div className="text-gray-600">
-                    Take collaboration to the next level with security and
-                    administrative features built for teams.
+                  <div className="text-gray-600 text-sm">
+                    For eg. How to accept payment from foreign clients?
                   </div>
                 </div>
                 <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                   <svg
-                    className="w-3 h-3 fill-current"
-                    viewBox="0 0 12 12"
+                    className="object-fill"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z"
-                      fill="#191919"
-                      fillRule="nonzero"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
                 </div>
@@ -160,11 +232,11 @@ function SlackSection() {
 
           {/* Tabs items */}
           <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
+            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 mb-8 md:mb-0 md:order-1"
             data-aos="zoom-y-out"
             ref={tabs}
           >
-            <div className="relative flex flex-col text-center lg:text-right">
+            <div className="relative flex flex-col">
               {/* Item 1 */}
               <Transition
                 show={tab === 1}
@@ -178,85 +250,12 @@ function SlackSection() {
                 leaveEnd="opacity-0 -translate-y-16"
               >
                 <div className="relative inline-flex flex-col">
-                  <div className="md:max-w-none mx-auto rounded text-left">
-                    {/* <!-- A message --> */}
-                    <div className="flex items-start mb-4 text-sm">
-                        <img src="https://pbs.twimg.com/profile_images/875010472105222144/Pkt9zqPY_400x400.jpg" className="w-10 h-10 rounded mr-3" />
-                        <div className="flex-1 overflow-hidden">
-                            <div>
-                                <span className="font-bold">Steve Schoger</span>
-                                <span className="text-grey text-xs">11:46</span>
-                            </div>
-                            <p className="text-black leading-normal">The slack from the other side.</p>
-                        </div>
-                    </div>
-                    {/* <!-- A message --> */}
-                    <div className="flex items-start mb-4 text-sm">
-                        <img src="https://pbs.twimg.com/profile_images/887661330832003072/Zp6rA_e2_400x400.jpg" className="w-10 h-10 rounded mr-3" />
-                        <div className="flex-1 overflow-hidden">
-                            <div>
-                                <span className="font-bold">Adam Wathan</span>
-                                <span className="text-grey text-xs">12:45</span>
-                            </div>
-                            <p className="text-black leading-normal">How are we supposed to control the marquee space without an utility for it? I propose this:</p>
-                        </div>
-                    </div>
-                    {/* <!-- A message --> */}
-                    <div className="flex items-start mb-4 text-sm">
-                        <img src="https://pbs.twimg.com/profile_images/929910740156215296/yDEC9GW9_400x400.jpg" className="w-10 h-10 rounded mr-3" />
-                        <div className="flex-1 overflow-hidden">
-                            <div>
-                                <span className="font-bold">David Hemphill</span>
-                                <span className="text-grey text-xs">12:46</span>
-                            </div>
-                            <p className="text-black leading-normal"><a href="#" className="inline-block bg-blue-lightest text-blue no-underline">@Adam Wathan</a> the size of the generated CSS is creating a singularity in space/time, we must stop adding more utilities before it's too late!</p>
-                        </div>
-                    </div>
-                    {/* <!-- A message --> */}
-                    <div className="flex items-start mb-4 text-sm">
-                        <img src="https://pbs.twimg.com/profile_images/875010472105222144/Pkt9zqPY_400x400.jpg" className="w-10 h-10 rounded mr-3" />
-                        <div className="flex-1 overflow-hidden">
-                            <div>
-                                <span className="font-bold">Steve Schoger</span>
-                                <span className="text-grey text-xs">11:46</span>
-                            </div>
-                            <p className="text-black leading-normal">The slack from the other side.</p>
-                        </div>
-                    </div>
+                  <div className="md:max-w-none mx-auto rounded">
+                    {job_messages.map((message) => (
+                      <SlackMessage id={message.id} message={message} />
+                    ))}
                   </div>
                 </div>
-                  {/* <img
-              className="md:max-w-none mx-auto rounded"
-              src={require("../images/features-home-bg-01.png")}
-              width="500"
-              height="375"
-              alt="Features bg"
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 transform animate-float"
-              src={require("../images/features-home-element-01.png")}
-              width="500"
-              height="147"
-              alt="Element 01"
-              style={{ top: "22%" }}
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500"
-              src={require("../images/features-home-element-02.png")}
-              width="500"
-              height="158"
-              alt="Element 02"
-              style={{ top: "39%" }}
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000"
-              src={require("../images/features-home-element-03.png")}
-              width="500"
-              height="167"
-              alt="Element 03"
-              style={{ top: "77%" }}
-            /> */}
-                
               </Transition>
               {/* Item 2 */}
               <Transition
@@ -272,39 +271,10 @@ function SlackSection() {
               >
                 <div className="relative inline-flex flex-col">
                   <div className="md:max-w-none mx-auto rounded">
-                    Slack content #2
+                    {gear_messages.map((message) => (
+                      <SlackMessage id={message.id} message={message} />
+                    ))}
                   </div>
-                  {/* <img
-              className="md:max-w-none mx-auto rounded"
-              src={require("../images/features-home-bg-01.png")}
-              width="500"
-              height="375"
-              alt="Features bg"
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000"
-              src={require("../images/features-home-element-03.png")}
-              width="500"
-              height="167"
-              alt="Element 03"
-              style={{ top: "18%" }}
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500"
-              src={require("../images/features-home-element-02.png")}
-              width="500"
-              height="158"
-              alt="Element 02"
-              style={{ top: "40%" }}
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 transform animate-float"
-              src={require("../images/features-home-element-01.png")}
-              width="500"
-              height="147"
-              alt="Element 01"
-              style={{ top: "79%" }}
-            /> */}
                 </div>
               </Transition>
               {/* Item 3 */}
@@ -321,39 +291,10 @@ function SlackSection() {
               >
                 <div className="relative inline-flex flex-col">
                   <div className="md:max-w-none mx-auto rounded">
-                    Slack content #3
+                    {finance_messages.map((message) => (
+                      <SlackMessage id={message.id} message={message} />
+                    ))}
                   </div>
-                  {/* <img
-              className="md:max-w-none mx-auto rounded"
-              src={require("../images/features-home-bg-01.png")}
-              width="500"
-              height="375"
-              alt="Features bg"
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 transform animate-float"
-              src={require("../images/features-home-element-01.png")}
-              width="500"
-              height="147"
-              alt="Element 01"
-              style={{ top: "22%" }}
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500"
-              src={require("../images/features-home-element-02.png")}
-              width="500"
-              height="158"
-              alt="Element 02"
-              style={{ top: "39%" }}
-            />
-            <img
-              className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000"
-              src={require("../images/features-home-element-03.png")}
-              width="500"
-              height="167"
-              alt="Element 03"
-              style={{ top: "77%" }}
-            /> */}
                 </div>
               </Transition>
             </div>
@@ -362,5 +303,22 @@ function SlackSection() {
       </div>
     </section>
   );};
+
+const SlackMessage = ({message}) => {
+  return (
+    <div className="flex items-start mb-4 text-sm">
+      <img
+        src="https://pbs.twimg.com/profile_images/875010472105222144/Pkt9zqPY_400x400.jpg"
+        className="w-10 h-10 rounded mr-3"
+      />
+      <div className="flex-1 overflow-hidden">
+        <div>
+          <span className="font-bold">{message.userName}</span>
+        </div>
+        <p className="text-black leading-normal">{message.text}</p>
+      </div>
+    </div>
+  );
+}
 
 export default SlackSection;

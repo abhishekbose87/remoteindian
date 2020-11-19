@@ -17,7 +17,7 @@ const Home = (props) => (
     <Helmet />
     <Nav/>
     <Hero />
-    <Logo />
+    {/* <Logo /> */}
     {/* <SiteNav />
     <HeroSection /> */}
     <SlackSection />
