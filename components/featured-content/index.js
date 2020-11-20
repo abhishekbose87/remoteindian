@@ -5,7 +5,7 @@ import FeaturedInterviews from './interviews';
 
 const FeaturedContent = (props) => (
   <section>
-    <div className="mx-auto">
+    <div className="mx-auto max-w-screen-xl">
       <div className="py-6 md:py-10 ">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">

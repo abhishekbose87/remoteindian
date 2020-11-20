@@ -8,17 +8,18 @@ const Sponsors = () => {
           <h1 className="header">A community that is</h1>
           <h1 className="header"> accessible for everyone</h1>
           <p className="tagline">
-            A big thanks to ScaleReal and our patrons for their generous support that keeps the RemoteIndian project
-            independent and inclusive for everyone 🤗
+            A big thanks to ScaleReal and our patrons for their generous support
+            that keeps the RemoteIndian project independent and inclusive for
+            everyone 🤗
           </p>
         </div>
 
         <div className="mt-6 grid grid-cols-1 lg:mt-8 items-center justify-center justify-items-center">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-1/2 max-w-md shadow-md p-4">
             <img
               className=""
               src="/homepage/patrons/scalereal.png"
-              alt="Todoist"
+              alt="ScaleReal"
             />
           </div>
           <div className="text-sm text-gray-700 mt-6">
@@ -37,10 +38,30 @@ const Sponsors = () => {
           </div>
         </div>
         <div className="flex justify-center items-center my-10 mt-20">
-          <img className="" src="/homepage/patrons/patrons-image.png" alt="Patrons" />
-          <h2 className="text-xl font-medium gray-700">
-            &nbsp;and 30+ patrons
+          <img
+            className=""
+            src="/homepage/patrons/patrons-image.png"
+            alt="Patrons"
+          />
+          <h2 className="text-xl font-medium gray-700 ml-4 inline-block mr-4">
+            and 30+ patrons
           </h2>
+          <a href="/support">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 5l7 7-7 7M5 5l7 7-7 7"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>

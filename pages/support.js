@@ -113,7 +113,7 @@ export default function Support({
                   It will be a bespoke coffee shop like digital experience with
                   all the slack archives migrated to this website.
                 </strong>
-                Something like GetMakerlog or IndieHackers.
+                &nbsp;Something like GetMakerlog or IndieHackers.
               </div>
             </div>
           </div>
@@ -135,13 +135,27 @@ export default function Support({
           </div>
         </div>
         {/* Sponsors */}
-        <div className="section grid gap-4 container justify-items-center mt-20">
+        <div className="section flex flex-col items-center mt-20">
           <h2 className="h3 mb-4">🌟 Sponsors</h2>
-          <div className="flex flex-col w-1/4">
-            <img className="object-cover" src="/sponsors/scalereal.png" />
+          <div className="flex flex-col w-1/2 max-w-md shadow-md">
+            <img className="object-cover p-4" src="/sponsors/scalereal.png" />
             <div className="flex flex-col sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
-              <h3>ScaleReal Technologies</h3>
-              <div className="mb-2 sm:mx-auto md:mx-0 ">
+              <div className="text-sm text-gray-700 mt-6">
+                Build applications that scale beyond reality{" "}
+                <a href="https://scalereal.com/">
+                  <svg
+                    className="fill-current w-6 h-6 mr-2 inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                  </svg>
+                </a>
+              </div>
+              {/* <h3>ScaleReal Technologies</h3> */}
+              {/* <div className="mb-2 sm:mx-auto md:mx-0 ">
                 <a href="https://scalereal.com/">
                   <svg
                     className="fill-current w-6 h-6 mr-2"
@@ -153,7 +167,7 @@ export default function Support({
                     <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
                   </svg>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <Modal info={tiers.sponsor} />

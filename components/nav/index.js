@@ -30,7 +30,7 @@ const Nav = () => {
       <nav className="relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-24">
         <div className="flex items-center flex-1">
           <div className="flex items-center justify-between w-full md:w-auto">
-            <a href="#" aria-label="Home">
+            <a href="/" aria-label="Home">
               <img className="h-8 w-auto sm:h-10" src="/brand.png" alt="Logo" />
             </a>
             <div className="-mr-2 flex items-center md:hidden">
@@ -85,7 +85,7 @@ const Nav = () => {
           <span className="inline-flex rounded-md shadow-md">
             <span className="inline-flex rounded-md shadow-xs">
               <a
-                href="#"
+                href="/#signup"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out"
               >
                 Join Us
