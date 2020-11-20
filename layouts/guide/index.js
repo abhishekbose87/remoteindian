@@ -10,7 +10,7 @@ class GuideLayout extends React.Component {
 
     return (
       <DefaultLayout>
-        <SiteNav />
+        <Nav />
         { children }
         <PageFooter />
       </DefaultLayout>

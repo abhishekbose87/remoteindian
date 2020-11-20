@@ -28,7 +28,7 @@ function getBadgeText(guide) {
 const GuidesList = () => (
   <DefaultLayout>
     <Helmet title={PageTitle} desciption={PageDescription} />
-    <SiteNav />
+    <Nav />
     <PageHeader title={PageTitle} subtitle={PageDescription}>
       <BadgesList className="mt-4">
         <BadgeLink href={siteConfig.url.addGuide} target="_blank">

@@ -1,6 +1,33 @@
-const Nav = () => (
-    <>
-   <nav className="relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
+import React, { useState, useRef, useEffect } from "react";
+
+const Nav = () => {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const mobileNav = useRef(null);
+
+  // close the mobile menu on click outside
+  useEffect(() => {
+    const clickHandler = ({ target }) => {
+      if (!mobileNavOpen || mobileNav.current.contains(target)) return;
+      setMobileNavOpen(false);
+    };
+    document.addEventListener("click", clickHandler);
+    return () => document.removeEventListener("click", clickHandler);
+  });
+
+  // close the mobile menu if the esc key is pressed
+  useEffect(() => {
+    const keyHandler = ({ keyCode }) => {
+      if (!mobileNavOpen || keyCode !== 27) return;
+      setMobileNavOpen(false);
+    };
+    document.addEventListener("keydown", keyHandler);
+    return () => document.removeEventListener("keydown", keyHandler);
+  });
+
+  return (
+    <div className="relative pt-3 pb-8 sm:pb-12 lg:pb-16">
+      <nav className="relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-24">
         <div className="flex items-center flex-1">
           <div className="flex items-center justify-between w-full md:w-auto">
             <a href="#" aria-label="Home">
@@ -9,10 +36,13 @@ const Nav = () => (
             <div className="-mr-2 flex items-center md:hidden">
               <button
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                className={`inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out ${
+                  mobileNavOpen && "inline-flex"
+                }`}
                 id="main-menu"
                 aria-label="Main menu"
                 aria-haspopup="true"
+                onClick={() => setMobileNavOpen(!mobileNavOpen)}
               >
                 <svg
                   className="h-6 w-6"
@@ -65,7 +95,7 @@ const Nav = () => (
         </div>
       </nav>
 
-    {/* <!--
+      {/* <!--
     Mobile menu, show/hide based on menu open state.
 
     Entering: "duration-150 ease-out"
@@ -75,7 +105,12 @@ const Nav = () => (
       From: "opacity-100 scale-100"
       To: "opacity-0 scale-95"
     --> */}
-      <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+      <div
+        ref={mobileNav}
+        className={`absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden ${
+          !mobileNavOpen && "hidden"
+        }`}
+      >
         <div className="rounded-lg shadow-md">
           <div
             className="rounded-lg bg-white shadow-xs overflow-hidden"
@@ -92,6 +127,7 @@ const Nav = () => (
                   type="button"
                   className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                   aria-label="Close menu"
+                  onClick={() => setMobileNavOpen(!mobileNavOpen)}
                 >
                   <svg
                     className="h-6 w-6"
@@ -144,7 +180,8 @@ const Nav = () => (
           </div>
         </div>
       </div>
-      </>
-);
+    </div>
+  );
+};
 
 export default Nav;

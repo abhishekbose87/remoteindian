@@ -15,8 +15,8 @@ import DefaultLayout from 'layouts/default/index';
 const Home = (props) => (
   <DefaultLayout>
     <Helmet />
-    <SiteNav />
-    {/* <Nav /> */}
+    {/* <SiteNav /> */}
+    <Nav />
     <Hero />
 
     {/*<HeroSection /> */}

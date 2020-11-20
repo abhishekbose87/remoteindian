@@ -17,7 +17,7 @@ const PageDescription = "Get inspired by reading stories of folks who are workin
 const GuidesList = () => (
   <DefaultLayout>
     <Helmet title={PageTitle} desciption={PageDescription} />
-    <SiteNav />
+    <Nav />
     <PageHeader title={PageTitle} subtitle={PageDescription}>
       <BadgesList className="mt-4">
         <BadgeLink href={siteConfig.url.addInterview} target="_blank">
