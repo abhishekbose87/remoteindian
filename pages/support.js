@@ -140,7 +140,7 @@ export default function Support({
           <div className="flex flex-col w-1/2 max-w-md shadow-md">
             <img className="object-cover p-4" src="/sponsors/scalereal.png" />
             <div className="flex flex-col sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
-              <div className="text-sm text-gray-700 mt-6">
+              <div className="text-sm text-gray-700">
                 Build applications that scale beyond reality{" "}
                 <a href="https://scalereal.com/">
                   <svg

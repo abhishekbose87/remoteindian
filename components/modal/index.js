@@ -7,7 +7,7 @@ export default function Modal({info: {cta, headline, amount, benefits, priceId}}
   return (
     <>
       <button
-        className="bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-4"
+        className="bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-8 mb-4"
         type="button"
         style={{ transition: "all .15s ease" }}
         onClick={() => setShowModal(true)}
