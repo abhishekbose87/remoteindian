@@ -19,8 +19,7 @@ import RowBlock from "components/row-block";
 import Product from "components/product";
 
 const PageTitle = "WFH Tools";
-const PageDescription =
-  "<p>60+ Products curated by the RemoteIndian community 👨‍💻🇮🇳👩‍💻</p><p style='margin-top: 20px; margin-bottom: 10px;'>⚠️ Disclaimer: If you buy using the below affiliate links, you play a big part in keeping the RemoteIndian project <a href='/support'>independent and inclusive</a> for everyone.</p>";
+const PageDescription = "60+ Products curated by the RemoteIndian community 👨‍💻🇮🇳👩‍💻";
 
 
 const Tools = ({products}) => {
@@ -33,6 +32,10 @@ const Tools = ({products}) => {
         />
         <Nav />
         <PageHeader title={PageTitle} subtitle={PageDescription}>
+          <div class="mt-4 mb-2 px-40 italic">
+            ⚠️ Disclaimer: If you buy using the below affiliate links, you play
+            a big part in keeping the RemoteIndian project <a href="support" class="underline">independent and inclusive</a> for everyone.
+          </div>
           <BadgesList className="mt-4">
             <BadgeLink href={siteConfig.url.addProduct} target="_blank">
               <SecondaryBadge>
