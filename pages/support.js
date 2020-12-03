@@ -6,14 +6,11 @@ import DefaultLayout from "layouts/default/index";
 import Nav from "components/nav";
 import PageFooter from "components/page-footer/index";
 
-import { supabase } from "../lib/supabase/api";
 import Helmet from "../components/helmet";
 
 export default function Support({
-  top_supporters,
-  supporters,
-  contributors,
-  bmc
+  patrons,
+  revenue
 }) {
 
   const patron_benefits = [
@@ -96,7 +93,7 @@ export default function Support({
               <h1 className="text-xl font-bold">Goal</h1>
               <div className="mt-4 mb-4">
                 <p>
-                  &#x20B9;27.5k of &#x20B9;35k{" "}
+  &#x20B9;{revenue}k of &#x20B9;35k{" "}
                   <span className="text-gray-600">per month</span>
                 </p>
                 <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">
@@ -179,7 +176,7 @@ export default function Support({
           <div className="row-start-1 row-end-3 container col-span-full">
             <SupporterSection
               title="🥇 Top Supporters"
-              patrons={top_supporters}
+              patrons={filter_function(patrons, "Become a TOP supporter")}
               tier={tiers.top_supporter}
             />
           </div>
@@ -189,21 +186,19 @@ export default function Support({
             {/* Supporter */}
             <SupporterSection
               title="🙌  Supporters"
-              patrons={supporters}
+              patrons={filter_function(patrons, "Become a supporter")}
               tier={tiers.supporter}
             />
-
             {/* Contributor */}
             <SupporterSection
               title="🥤 Contributors"
-              patrons={contributors}
+              patrons={filter_function(patrons, "Become a contributor")}
               tier={tiers.contributor}
             />
-
             {/* Buy me a Coffee */}
             <SupporterSection
               title="☕️ Buy me a Coffee"
-              patrons={bmc}
+              patrons={filter_function(patrons, "Buy me a coffee")}
               tier={tiers.bmc}
             />
           </div>
@@ -216,36 +211,69 @@ export default function Support({
   );
 }
 
-function filter_function(patrons, type){
-  patrons.filter(elem, function(elem) {
+const filter_function = (patrons, type) => {
+  return patrons.filter(function(elem) {
       return elem.plan === type
-    })
+  })
 }
 
-const asyncFilter = async (type) => {
-  let { body: patrons } = await supabase.from("patrons").select("*").eq('plan', type);
+const asyncFilter = async () => {
+  let { data: patrons } = await callingFn();
   return patrons;
 };
 
 export async function getStaticProps() {
   try {
-    
-    
-    let top_supporters = await asyncFilter('Become a TOP supporter');
-    let supporters = await asyncFilter("Become a supporter");
-    let contributors = await asyncFilter("Become a contributor");
-    let bmc = await asyncFilter("Buy me a coffee");
-
+    let patrons = await asyncFilter();
+    let {data: [entry]} = await callingAmt();
 
     return {
       props: {
-        top_supporters: top_supporters,
-        supporters: supporters,
-        contributors: contributors,
-        bmc: bmc,
+        patrons: patrons,
+        revenue: entry.amount
       }
     };
   } catch (error) {
     console.log("Error: ", error);
   }
 }
+
+async function callingAmt() {
+  try {
+    const response = await fetch(
+      "https://v1.nocodeapi.com/avi/google_sheets/xesNowmVMxwrhxnD?tabId=Amount",
+      {
+        method: "get",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const json = await response.json();
+    // console.log("Success:", JSON.stringify(json));
+    return json;
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+async function callingFn() {
+  try {
+    const response = await fetch(
+      "https://v1.nocodeapi.com/avi/google_sheets/xesNowmVMxwrhxnD?tabId=DB",
+      {
+        method: "get",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const json = await response.json();
+    // console.log("Success:", JSON.stringify(json));
+    return json;
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+callingFn();

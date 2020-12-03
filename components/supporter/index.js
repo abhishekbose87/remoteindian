@@ -8,7 +8,7 @@ const SupporterSection = ({title, patrons, tier}) => {
           {patrons.map((supporter) => (
             <div
               className="rounded overflow-show  shadow-lg bg-white m-3 supporter-card grid"
-              key={supporter.id}
+              key={supporter.row_id}
             >
               <img
                 className="rounded-full mx-auto mt-4 w-4/5 h-1/2"
