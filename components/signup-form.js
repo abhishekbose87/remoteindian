@@ -23,8 +23,8 @@ class SignupForm extends Component {
   render(){
     return (
     <div className="mt-3 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-      <p class="emailoctopus-success-message"></p>
-      <p class="emailoctopus-error-message"></p>
+      <p className="emailoctopus-success-message"></p>
+      <p className="emailoctopus-error-message"></p>
       <form
         action="https://emailoctopus.com/lists/1ea3c5aa-7d64-11e9-9307-06b4694bee2a/members/embedded/1.3s/add"
         method="POST"

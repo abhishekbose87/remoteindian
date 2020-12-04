@@ -2,8 +2,8 @@ import { Author, AuthorImage, AuthorName, BlockLink, BlockMeta, BlockSubtitle, B
 
 const Product = ({ product }) => {
   return (
-    <div className="col-span-12 md:col-span-6 lg:col-span-4">
-      <BlockLink href={product.url} target="_blank">
+    <div className="col-span-12 md:col-span-6 lg:col-span-4" key={product.id}>
+      <BlockLink href={product.affiliate_url} target="_blank">
         <div className="col-span-12 px-0">
           <BlockImage className="img-fluid" src={product.image_url} />
         </div>
