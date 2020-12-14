@@ -66,8 +66,8 @@ export const AuthorImage = styled.img`
 export const BlockImage = styled.img`
   margin: auto;
   margin-bottom: 10px;
-  object-fit: contain;
-  height: 250px;
+  object-fit: cover;
+  height: 150px;
   display: block;
 `;
 

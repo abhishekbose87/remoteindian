@@ -13,14 +13,14 @@ const FeaturedGuides = () => (
       </div>
       <p className="hidden md:block border-through featured-separator">
         <span>
-          Guides most visited by the community&nbsp;
+          {/* Guides most visited by the community&nbsp; */}
           <a href="/guides" className="dark-link hidden md:inline">
             View all Guides &rarr;
           </a>
         </span>
       </p>
       <p className="block md:hidden featured-separator">
-        Guides most visited by the community&nbsp;
+        {/* Guides most visited by the community&nbsp; */}
         <a href="/guides" className="dark-link inline-block mt-2">
           View all Guides &rarr;
         </a>

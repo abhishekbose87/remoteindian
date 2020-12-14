@@ -66,7 +66,7 @@ const Hero = () => (
       </div>
 
       <div className="mt-12 relative sm:max-w-lg lg:mt-0 lg:max-w-none col-span-6 flex mx-auto md:mx-0 md:justify-end ">
-        <div className="relative w-full rounded-lg shadow-lg lg:max-w-md">
+        <div className="relative w-full lg:max-w-md">
           <img className="w-full" src="/homepage/ri_community.png" alt="" />
         </div>
       </div>

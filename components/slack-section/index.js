@@ -10,26 +10,33 @@ function SlackSection() {
   const finance_messages = [
     {
       id: 1,
-      text: `Hi guys, I just left my job and started freelancing.
-I am using PayPal and the fees are really horrible, how do you guys accept payments from foreign clients (Mostly US based companies)?
-Also I don’t know anything about legalities of paperwork and taxes necessary, any suggestions of what’s necessary?
+      text: `<p>Hi guys, I just left my job and started freelancing.</p>
+
+<p>I am using PayPal and the fees are really horrible, how do you guys accept payments from foreign clients (Mostly US based companies)?</p>
+
+<p>Also I don’t know anything about legalities of paperwork and taxes necessary, any suggestions of what’s necessary?</p>
 `,
       userName: "Abhishek",
       imageId: "abhi",
     },
     {
       id: 2,
-      text: `We used Xoom for the first payment but then client’s account was blocked as it is for personal use only. Not commercially. Then we used transferwise. It has lowest fees and also trustworthy. As for the taxes part, if you’re planning to continue this only then I suggest consult a CA, it will come a long way. He will suggest ways to save taxes and everything.
+      text: `<p>We used Xoom for the first payment but then client’s account was blocked as it is for personal use only. Not commercially. Then we used transferwise. It has lowest fees and also trustworthy. As for the taxes part, if you’re planning to continue this only then I suggest consult a CA, it will come a long way. He will suggest ways to save taxes and everything.</p>
 `,
       userName: "Dhanraj",
       imageId: "dhanraj",
     },
     {
       id: 3,
-      text: `Welcome to the group! There are a couple of good threads on #finance regarding your queries.
-The general consensus on this group has been: 1) Bank wire transfers are best if your client agrees to it. You should set up an EEFC account. ICICI generally has good conversion rates.
-Transferwise is probably the other best option. But client needs to have an account as well.
-The other thing people have tried and liked (me included) is Payoneer. That gives you a US / UK bank account - so your client can pay locally and money gets converted to your Indian bank account.
+      text: `<p>@abhishek Welcome to the group! There are a couple of good threads on regarding your queries.</p>
+
+<p>The general consensus on this group has been: </p>
+
+<ol>
+<li>1. Bank wire transfers are best if your client agrees to it. You should set up an EEFC account. ICICI generally has good conversion rates.</li>
+<li>2. Transferwise is probably the other best option. But client needs to have an account as well.</li>
+<li>3. The other thing people have tried and liked (me included) is Payoneer. That gives you a US / UK bank account - so your client can pay locally and money gets converted to your Indian bank account.</li>
+</ol>
 `,
       userName: "Saurabh",
       imageId: "saurabh",
@@ -46,22 +53,26 @@ The other thing people have tried and liked (me included) is Payoneer. That give
     },
     {
       id: 2,
-      text: `I would order components from amazon or flipkart and assemble it on my own. I recently ordered some components from mdcomputers. If you're looking for pre-built pc then ant-pc.com or easypc.in would be suitable. You can refer this website https://assembleyourpc.net/ for choosing a configuration
+      text: `<p>I would order components from amazon or flipkart and assemble it on my own. I recently ordered some components from mdcomputers. If you're looking for pre-built pc then <a href="ant-pc.com">ant-pc.com</a> or <a href="ant-pc.com">easypc.in</a> would be suitable.</p>
+
+<p>You can refer this website <a href="ant-pc.com">https://assembleyourpc.net/</a> for choosing a configuration</p>
 `,
       userName: "Muzammil",
       imageId: "muzammil",
     },
     {
       id: 3,
-      text: `I use https://pcpartpicker.com/, make my part list and assemble. Assembled ones are way better value than branded, all-in-one ones. Here's a part list for something i assembled a few years back and that i use for work now
-https://pcpartpicker.com/user/abhikrk/saved/#view=vh9sJx`,
+      text: `<p>I use <a href="https://pcpartpicker.com/">https://pcpartpicker.com/</a>, make my part list and assemble. Assembled ones are way better value than branded, all-in-one ones. </p>
+
+<p>Here's a part list for something i assembled a few years back and that i use for work now <a href="https://pcpartpicker.com/user/abhikrk/saved/#view=vh9sJx">https://pcpartpicker.com/user/abhikrk/saved/#view=vh9sJx</a></p>`,
       userName: "Abhik",
       imageId: "abhik",
     },
     {
       id: 4,
-      text: `Some amazing links here. @Amit S. which city are you based out of? If you are in one of the larger cities, you may even get better pricing from physical stores compared to online retailers.
-If you are in Pune, can send you the number of my wholesale person in Pune - he generally has quite good prices.`,
+      text: `<p>Some amazing links here. @Amit S. which city are you based out of? If you are in one of the larger cities, you may even get better pricing from physical stores compared to online retailers.</p>
+
+<p>If you are in Pune, can send you the number of my wholesale person in Pune - he generally has quite good prices.</p>`,
       userName: "Saurabh",
       imageId: "saurabh",
     },
@@ -70,18 +81,18 @@ If you are in Pune, can send you the number of my wholesale person in Pune - he 
   const job_messages = [
     {
       id: 1,
-      text: `Hi Folks, Hiring for multiple roles at Remo. Please let me know if anyone is interested. We are looking to hire people who have proven to be the best in their respective fields.
+      text: `<p>Hi Folks, Hiring for multiple roles at Remo. Please let me know if anyone is interested. We are looking to hire people who have proven to be the best in their respective fields.</p>
 
-This is the list of openings: https://angel.co/company/remo-co/jobs
+<p>This is the list of openings: <a href='https://angel.co/company/remo-co/jobs' target='_blank'>https://angel.co/company/remo-co/jobs</a></p>
 
-Can DM me if you have any questions.
+<p>Can DM me if you have any questions.</p>
 `,
       userName: "Ashwin",
       imageId: "ashwin",
     },
     {
       id: 2,
-      text: `Tribe, Small announcement and a big shoutout to RI 🙏 I’ve recently signed a full time contract with Remo. This wouldn’t have been possible otherwise. I have been a part of the community since an year now, the amount of knowledge and consciousness one could gain from RI is priceless (I’m sure almost every other post made across channels has something in store for someone ❤). It’s very hard to settle for less along with consistent discomfort from the toxic work culture and pay I have been through in Consulting and Product companies across in non-remote jobs. With one of the best cultures I’ve ever experienced I could definitely say with current remote gig I overcame those issues i have faced. Excited about the future 🚀
+      text: `<p>Tribe, Small announcement and a big shoutout to RI 🙏 </p><p>I’ve recently signed a full time contract with Remo. This wouldn’t have been possible otherwise. I have been a part of the community since an year now, the amount of knowledge and consciousness one could gain from RI is priceless (I’m sure almost every other post made across channels has something in store for someone ❤).</p><p>It’s very hard to settle for less along with consistent discomfort from the toxic work culture and pay I have been through in Consulting and Product companies across in non-remote jobs. With one of the best cultures I’ve ever experienced I could definitely say with current remote gig I overcame those issues i have faced.</p><p>Excited about the future 🚀</p>
 `,
       userName: "Bhardwaj",
       imageId: "bhardwaj",
@@ -129,7 +140,7 @@ Can DM me if you have any questions.
                 className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                   tab !== 1
                     ? "bg-gray-200 border-transparent"
-                    : "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                    : "bg-white shadow-md border-gray-800 hover:shadow-lg"
                 }`}
                 href="#0"
                 onClick={(e) => {
@@ -167,7 +178,7 @@ Can DM me if you have any questions.
                 className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                   tab !== 2
                     ? "bg-gray-200 border-transparent"
-                    : "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                    : "bg-white shadow-md  border-gray-800 hover:shadow-lg"
                 }`}
                 href="#0"
                 onClick={(e) => {
@@ -204,7 +215,7 @@ Can DM me if you have any questions.
                 className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                   tab !== 3
                     ? "bg-gray-200 border-transparent"
-                    : "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                    : "bg-white shadow-md  border-gray-800 hover:shadow-lg"
                 }`}
                 href="#0"
                 onClick={(e) => {
@@ -242,7 +253,7 @@ Can DM me if you have any questions.
 
           {/* Tabs items */}
           <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-8 mb-8 md:mb-0 md:order-1 bg-white shadow-md border-gray-200 hover:shadow-lg p-4"
+            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-8 mb-8 md:mb-0 md:order-1 bg-white shadow-md border border-gray-800 hover:shadow-lg p-4"
             data-aos="zoom-y-out"
             ref={tabs}
           >
@@ -259,8 +270,8 @@ Can DM me if you have any questions.
                 leaveStart="opacity-100 translate-y-0"
                 leaveEnd="opacity-0 -translate-y-16"
               >
-                <div className="relative inline-flex flex-col">
-                  <div className="md:max-w-none mx-auto rounded">
+                <div className="relative inline-flex flex-col ">
+                  <div className="w-full mx-auto rounded">
                     {job_messages.map((message) => (
                       <SlackMessage key={message.id} message={message} />
                     ))}
@@ -325,7 +336,13 @@ const SlackMessage = ({message}) => {
         <div>
           <span className="font-bold">{message.userName}</span>
         </div>
-        <p className="text-black leading-normal">{message.text}</p>
+        {/* <p className="text-black leading-normal">{message.text}</p> */}
+        <div
+          className="text-black leading-normal slack-messages"
+          dangerouslySetInnerHTML={{
+            __html: message.text,
+          }}
+        ></div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const CTA = () => {
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
             <div className="lg:self-center">
               <h2 className="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10">
-                <span className="block">Ready to join the tribe?</span>
+                <span className="block">Join the RI community</span>
               </h2>
               <p className="mt-4 text-md leading-6 text-indigo-200">
                 Also, unlock perks from our awesome partners - Krisp.ai,

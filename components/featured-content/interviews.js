@@ -13,14 +13,14 @@ const FeaturedInterviews = () => (
       </div>
       <p className="hidden md:block border-through featured-separator">
         <span>
-          Interviews most visited by the community&nbsp;
+          {/* Interviews most visited by the community&nbsp; */}
           <a href="/interviews" className="dark-link hidden md:inline">
             View all Interviews &rarr;
           </a>
         </span>
       </p>
       <p className="block md:hidden featured-separator">
-        Interviews most visited by the community&nbsp;
+        {/* Interviews most visited by the community&nbsp; */}
         <a href="/interviews" className="dark-link inline-block mt-2">
           View all Interviews &rarr;
         </a>

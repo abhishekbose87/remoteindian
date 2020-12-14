@@ -93,7 +93,7 @@ export default function Support({
               <h1 className="text-xl font-bold">Goal</h1>
               <div className="mt-4 mb-4">
                 <p>
-  &#x20B9;{revenue}k of &#x20B9;35k{" "}
+                  &#x20B9;{revenue}k of &#x20B9;35k{" "}
                   <span className="text-gray-600">per month</span>
                 </p>
                 <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">
@@ -139,15 +139,20 @@ export default function Support({
             <div className="flex flex-col sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
               <div className="text-sm text-gray-700">
                 Build applications that scale beyond reality{" "}
-                <a href="https://scalereal.com/">
+                <a href="https://scalereal.com/" target="_blank">
                   <svg
-                    className="fill-current w-6 h-6 mr-2 inline-block"
+                    className="w-6 h-6 inline"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
                   >
-                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                    />
                   </svg>
                 </a>
               </div>
