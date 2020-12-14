@@ -16,54 +16,35 @@ import {
 } from "components/badges";
 import siteConfig from "content/site";
 import RowBlock from "components/row-block";
-import Product from "components/product";
+import Video from "components/video";
 
-const PageTitle = "WFH Tools";
-const PageDescription = "60+ Products curated by the RemoteIndian community 👨‍💻🇮🇳👩‍💻";
+const PageTitle = "📺 RI Campfire Sessions";
+const PageDescription = "Selected recordings of zoom calls hosted by the RI community every Saturday";
 
 
-const Tools = ({products}) => {
+const Videos = ({videos}) => {
 
     return (
       <DefaultLayout>
         <Helmet
-          title="Make WFH work for you 👨‍💻👩‍💻"
-          description="Find 60+ products that that will help you to be productive while working from home 🏠</p>"
+          title="📺 RI Campfire Sessions"
+          description="Find selected recordings of zoom calls hosted by the RI community every Saturday."
         />
         <Nav />
         <PageHeader title={PageTitle} subtitle={PageDescription}>
           <div class="mt-4 mb-2 px-40 italic text-sm">
-            Disclosure: This page contains affliate links, meaning
-            when you click the links and make a purchase, we receive a
-            commission. 
-            
-            This income plays a
-            small part in keeping the RemoteIndian project{" "}
+            Become a{" "}
             <a href="support" class="underline">
-              independent and inclusive
+              patron
             </a>{" "}
-            for everyone.
+            to unlock recordings of 20+ sessions.
           </div>
-          <BadgesList className="mt-4">
-            <BadgeLink href={siteConfig.url.addProduct} target="_blank">
-              <SecondaryBadge>
-                <FontAwesomeIcon icon={faCodeBranch} />
-                Submit a product
-              </SecondaryBadge>
-            </BadgeLink>
-            {/* <BadgeLink href={siteConfig.url.signUp}>
-              <PrimaryBadge>
-                <FontAwesomeIcon icon={faEnvelope} />
-                Send me Updates
-              </PrimaryBadge>
-            </BadgeLink> */}
-          </BadgesList>
         </PageHeader>
         <div className="pt-5 pb-5 bg-gray-100 border-t">
           <div className="px-10">
             <div className="grid grid-cols-12 gap-8">
-              {products["data"].map((product) => (
-                <Product product={product} />
+              {videos["data"].map((video) => (
+                <Video video={video} />
               ))}
             </div>
           </div>
@@ -75,11 +56,11 @@ const Tools = ({products}) => {
 
 export async function getStaticProps() {
   try {
-    let products = await callingFn();
+    let videos = await callingFn();
 
     return {
       props: {
-        products: products,
+        videos: videos,
       },
     };
   } catch (error) {
@@ -90,7 +71,7 @@ export async function getStaticProps() {
 async function callingFn() {
   try {
     const response = await fetch(
-      "https://v1.nocodeapi.com/avi/google_sheets/alYEYpogMFHpLuIQ?tabId=Sheet1",
+      "https://v1.nocodeapi.com/avi/google_sheets/alYEYpogMFHpLuIQ?tabId=Sheet2",
       {
         method: "get",
         headers: {
@@ -106,4 +87,4 @@ async function callingFn() {
   }
 }
 
-export default Tools;
+export default Videos;
