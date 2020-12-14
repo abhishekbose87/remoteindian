@@ -43,7 +43,7 @@ const Tools = ({products}) => {
                 Submit a product
               </SecondaryBadge>
             </BadgeLink>
-            {/* <BadgeLink href="/signup">
+            {/* <BadgeLink href={siteConfig.url.signUp}>
               <PrimaryBadge>
                 <FontAwesomeIcon icon={faEnvelope} />
                 Send me Updates

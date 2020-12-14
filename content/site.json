@@ -1,21 +1,22 @@
 {
   "author": "Abhishek",
-  "title": "Community for remote workers in India 🇮🇳",
+  "title": "The biggest and most supportive community of folks working remotely from India 👨‍💻🇮🇳👩‍💻",
   "name": "RemoteIndian",
-  "description": "Community driven guides, interviews and resources for remote workers in India to learn from, identify their career paths, know what they don't know, find out the knowledge gaps, learn and improve.",
+  "description": "Join a community that enables Indian professionals to help each other navigate, balance and grow in a remote career 🚀",
   "twitter": "abhishekbose87",
   "facebook": "abhishekbose87",
   "logo": "/brand.png",
   "logoSquare": "/brand-square.png",
   "url": {
-    "web": "https://beta.remoteindian.com",
+    "web": "https://remoteindian.com",
     "repo": "https://github.com/remoteindian/remoteindian",
     "repoData": "https://github.com/remoteindian/remoteindian/tree/master/content",
     "addGuide": "https://github.com/remoteindian/remoteindian/tree/master/contributing/guide.md",
     "addInterview": "https://github.com/remoteindian/remoteindian/tree/master/contributing/interview.md",
     "addProduct": "https://forms.gle/aKzY6UN79PfEk8UT7",
     "contribute": "https://github.com/remoteindian/remoteindian/tree/master/contributing",
-    "issue": "https://github.com/remoteindian/remoteindian/issues/new"
+    "issue": "https://github.com/remoteindian/remoteindian/issues/new",
+    "signUp": "/#signup"
   },
   "keywords": [
     "remote work india",

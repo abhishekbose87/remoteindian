@@ -16,7 +16,7 @@ const SiteNav = () => (
         </a>
         {/* <a href='/sponsors' className='d-none d-md-inline-block'>Sponsors</a>
         <a href='/about' className='d-none d-md-inline-block'>FAQ</a>*/}
-        <a href="/signup" className="signup">
+        <a href={siteConfig.url.signUp} className="signup">
           Join Us
         </a>
       </div>

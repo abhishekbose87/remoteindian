@@ -3,10 +3,10 @@
   <h2 align="center">RemoteIndian Community</h2>
   <p align="center">Community driven guides, interviews and resources for remote workers in India to learn from, identify their career paths, know what they don't know, find out the knowledge gaps, learn, and improve.<p>
   <p align="center">
-    <a href="https://beta.remoteindian.com/guides">
+    <a href="https://remoteindian.com/guides">
     	<img src="https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="guides" />
     </a>
-    <a href="https://beta.remoteindian.com/interviews">
+    <a href="https://remoteindian.com/interviews">
     	<img src="https://img.shields.io/badge/-Roadmaps-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="interviews" />
     </a>
     <a href="./contributing/readme.md">

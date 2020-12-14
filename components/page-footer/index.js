@@ -22,10 +22,8 @@ const PageFooter = () => (
               </a>
             </div>
             <div className="brand-explanation">
-              <p>
-                Join a community for remote workers, work from home
-                professionals, freelancers and indie hackers in India
-                &#x1f1ee;&#x1f1f3;
+              <p>Community for remote workers in India 👨‍💻🇮🇳👩‍💻 that enables Indian professionals to help each other navigate,
+                balance and grow in a remote career.
               </p>
             </div>
             <p className="meta-links">

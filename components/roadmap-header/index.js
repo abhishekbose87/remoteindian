@@ -18,7 +18,7 @@ const RoadmapHeader = ({ roadmap, page = 'landscape' }) => (
         </DarkBadge>
       </BadgeLink>
       { roadmap.upcoming && (
-        <BadgeLink href="/signup">
+        <BadgeLink href={siteConfig.url.signUp}>
           <SecondaryBadge>
             <FontAwesomeIcon className='d-none d-md-block' icon={ faClock } />
             Upcoming Roadmap
@@ -34,7 +34,7 @@ const RoadmapHeader = ({ roadmap, page = 'landscape' }) => (
         </BadgeLink>
       ) }
 
-      <BadgeLink href="/signup">
+      <BadgeLink href={siteConfig.url.signUp}>
         <PrimaryBadge>
           <FontAwesomeIcon className='d-none d-md-block' icon={ faEnvelope } />
           Send me Updates

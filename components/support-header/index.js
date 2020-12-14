@@ -19,8 +19,7 @@ const SupporterHeader = () => {
        <div className="flex flex-col md:flex-row items-center justify-between align-middle gap-2">
          <nav className="text-center md:text-left text-sm md:text-base font-semibold">
            <span>
-             Abhishek is creating a community that enables Indian engineers and
-             product professionals to help each other navigate, balance and grow
+             Abhishek is creating a community that enables Indian professionals to help each other navigate, balance and grow
              in a remote career.
            </span>
            &nbsp;

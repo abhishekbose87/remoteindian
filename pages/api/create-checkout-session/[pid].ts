@@ -24,7 +24,7 @@ export default async function handler(
       },
     ],
     mode: "subscription",
-    success_url: "https://beta.remoteindian.com/success",
+    success_url: "https://remoteindian.com/success",
     cancel_url: "https://example.com/cancel",
   });
 

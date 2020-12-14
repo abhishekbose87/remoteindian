@@ -26,7 +26,7 @@ const GuidesList = () => (
             Share your story
           </SecondaryBadge>
         </BadgeLink>
-        <BadgeLink href="/signup">
+        <BadgeLink href={siteConfig.url.signUp}>
           <PrimaryBadge>
             <FontAwesomeIcon icon={faEnvelope} />
             Send me Updates
