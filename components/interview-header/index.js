@@ -16,6 +16,7 @@ import { getTwitterUrl } from "lib/url";
 import { faClock, faEnvelope, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge, DarkBadge } from 'components/badges';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import siteConfig from "content/site";
 
 const GuideHeader = ({ guide, guide: { author = {} } = {} }) => (
   <HeaderWrap className="border-b">

@@ -1,4 +1,5 @@
 import { HeaderWrap } from './style';
+import siteConfig from "content/site";
 
 const SiteNav = () => (
   <HeaderWrap>
