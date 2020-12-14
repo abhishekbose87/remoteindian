@@ -3,15 +3,14 @@ import { Mark } from "components/mark";
 import SignupForm from "components/signup-form.js"
 
 const Hero = () => (
-  <main className="mt-4 mx-auto max-w-screen-xl px-12 md:px-24 sm:mt-6 md:mt-10 xl:mt-12">
+  <main className="mt-4 mx-auto max-w-screen-xl px-12 md:px-24 ">
     <div className="grid grid-cols-6 md:grid-cols-12 gap-8 items-center">
       <div className="sm:text-center md:max-w-2xl md:mx-auto col-span-6 md:text-left">
         <h2 className="mt-1 pb-4 text-2xl tracking-tight leading-10 font-bold text-gray-800 sm:leading-none sm:text-3xl lg:text-4xl xl:text-5xl">
           RemoteIndian
           <br className="hidden md:inline" />{" "}
           <span>
-            is the biggest and most supportive community of folks working
-            remotely from India
+            is the largest community of folks working remotely from India 👨‍💻🇮🇳👩‍💻
           </span>
         </h2>
         <div className="mt-4 grid grid-cols-12 justify-end border-b pb-2">
