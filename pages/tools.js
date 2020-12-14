@@ -31,14 +31,12 @@ const Tools = ({products}) => {
           description="Find 60+ products that that will help you to be productive while working from home 🏠</p>"
         />
         <Nav />
+
         <PageHeader title={PageTitle} subtitle={PageDescription}>
           <div class="mt-4 mb-2 px-40 italic text-sm">
-            Disclosure: This page contains affliate links, meaning
-            when you click the links and make a purchase, we receive a
-            commission. 
-            
-            This income plays a
-            small part in keeping the RemoteIndian project{" "}
+            Disclosure: This page contains affliate links, meaning when you
+            click the links and make a purchase, we receive a commission. This
+            income plays a small part in keeping the RemoteIndian project{" "}
             <a href="support" class="underline">
               independent and inclusive
             </a>{" "}
@@ -60,15 +58,17 @@ const Tools = ({products}) => {
           </BadgesList>
         </PageHeader>
         <div className="pt-5 pb-5 bg-gray-100 border-t">
-          <div className="px-10">
-            <div className="grid grid-cols-12 gap-8">
-              {products["data"].map((product) => (
-                <Product product={product} />
-              ))}
+          <div className="mx-auto max-w-screen-xl">
+            <div className="px-10">
+              <div className="grid grid-cols-12 gap-8">
+                {products["data"].map((product) => (
+                  <Product product={product} />
+                ))}
+              </div>
+            </div>
             </div>
           </div>
-        </div>
-        <PageFooter />
+          <PageFooter />
       </DefaultLayout>
     );
           }

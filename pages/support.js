@@ -84,7 +84,7 @@ export default function Support({
         description="Your contribution keeps the community independent and inclusive for everyone 🤗"
       />
       <Nav />
-      <div className="text-sm md:text-base">
+      <div className="text-sm md:text-base mx-auto max-w-screen-xl">
         <SupportHeader />
         <div className="grid grid-rows-auto mt-4">
           <div className="row-start-2 row-end-4 col-span-full bg-gray-200 w-full"></div>

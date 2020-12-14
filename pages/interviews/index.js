@@ -35,11 +35,13 @@ const GuidesList = () => (
       </BadgesList>
     </PageHeader>
     <div className="pt-5 pb-5 bg-light border-top">
-      <div className="px-10">
-        <div className="grid grid-cols-12 gap-6">
-          {getAllInterviews().map((guide) => (
-            <FeaturedGuide guide={guide} key={guide.url} />
-          ))}
+      <div className="mx-auto max-w-screen-xl">
+        <div className="px-10">
+          <div className="grid grid-cols-12 gap-6">
+            {getAllInterviews().map((guide) => (
+              <FeaturedGuide guide={guide} key={guide.url} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -46,19 +46,21 @@ const GuidesList = () => (
       </BadgesList>
     </PageHeader>
     <div className="pt-5 pb-5 bg-gray-100 border-t">
-      <div className="px-10">
-        <div className="grid grid-cols-12">
-          {getAllGuides().map((guide) => (
-            // <FeaturedGuide guide={guide} key={guide.url} />
-            <RowBlock
-              key={guide.url}
-              title={guide.title}
-              subtitle={guide.featuredDescription || guide.description}
-              url={guide.url}
-              disabled={guide.upcoming}
-              badge={getBadgeText(guide)}
-            />
-          ))}
+      <div className="mx-auto max-w-screen-xl">
+        <div className="px-10">
+          <div className="grid grid-cols-12">
+            {getAllGuides().map((guide) => (
+              // <FeaturedGuide guide={guide} key={guide.url} />
+              <RowBlock
+                key={guide.url}
+                title={guide.title}
+                subtitle={guide.featuredDescription || guide.description}
+                url={guide.url}
+                disabled={guide.upcoming}
+                badge={getBadgeText(guide)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

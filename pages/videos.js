@@ -41,15 +41,17 @@ const Videos = ({videos}) => {
           </div>
         </PageHeader>
         <div className="pt-5 pb-5 bg-gray-100 border-t">
-          <div className="px-10">
-            <div className="grid grid-cols-12 gap-8">
-              {videos["data"].map((video) => (
-                <Video video={video} />
-              ))}
+          <div className="mx-auto max-w-screen-xl">
+            <div className="px-10">
+              <div className="grid grid-cols-12 gap-8">
+                {videos["data"].map((video) => (
+                  <Video video={video} />
+                ))}
+              </div>
+            </div>
             </div>
           </div>
-        </div>
-        <PageFooter />
+          <PageFooter />
       </DefaultLayout>
     );
           }
