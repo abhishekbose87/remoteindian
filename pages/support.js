@@ -8,24 +8,24 @@ import PageFooter from "components/page-footer/index";
 
 import Helmet from "../components/helmet";
 
-export default function Support({
-  patrons,
-  revenue
-}) {
-
+export default function Support({ patrons, revenue }) {
   const patron_benefits = [
-        {
-          id: 1,
-          text:
-            "💌 Receive monthly insider emails - Let’s talk about the RemoteIndian project and make sure you get the best from it",
-        },
-        { id: 2, text: "📹 Unlock recordings of 20+ Zoom calls - Dive into topics like Personal Finance for Remote workers, Health Insurance or revisit AMAs with folks working in Doist, Zeit etc" },
-        {
-          id: 3,
-          text:
-            "❤️ Enter our Hall of Fame - You’ll be part of a page on our website dedicated to Patrons",
-        },
-      ]
+    {
+      id: 1,
+      text:
+        "💌 Receive monthly insider emails - Let’s talk about the RemoteIndian project and make sure you get the best from it",
+    },
+    {
+      id: 2,
+      text:
+        "📹 Unlock recordings of 20+ Zoom calls - Dive into topics like Personal Finance for Remote workers, Health Insurance or revisit AMAs with folks working in Doist, Zeit etc",
+    },
+    {
+      id: 3,
+      text:
+        "❤️ Enter our Hall of Fame - You’ll be part of a page on our website dedicated to Patrons",
+    },
+  ];
 
   const tiers = {
     sponsor: {
@@ -99,18 +99,14 @@ export default function Support({
                 <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">
                   <div
                     className="bg-red-600 h-full rounded-lg shadow"
-                    style={{ width: "75%" }}
+                    style={{ width: "100%" }}
                   ></div>
                 </div>
               </div>
               <div className="tracking-wide">
-                When I reach a minimum viable income, I will build a new
-                community space for the community to hangout.&nbsp;
-                <strong>
-                  It will be a bespoke coffee shop like digital experience with
-                  all the slack archives migrated to this website.
-                </strong>
-                &nbsp;Something like GetMakerlog or IndieHackers.
+                ✅ Reached Minimum Viable Income of &#x20B9;35k a month 🎉. Now
+                it's time to build a new community space for the community to
+                hangout like GetMakerlog or IndieHackers.
               </div>
             </div>
           </div>
@@ -134,33 +130,19 @@ export default function Support({
         {/* Sponsors */}
         <div className="section flex flex-col items-center mt-20">
           <h2 className="h3 mb-4">🌟 Sponsors</h2>
-          <div className="flex flex-col w-1/2 max-w-md shadow-md">
-            <img className="object-cover p-4" src="/sponsors/scalereal.png" />
-            <div className="flex flex-col sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
-              <div className="text-sm text-gray-700">
-                Build applications that scale beyond reality{" "}
+          <div className="flex justify-center flex-wrap">
+            <div className="rounded overflow-show  shadow-lg bg-white m-3 sponsor-card grid">
+              <img
+                className="mx-auto mt-4 h-24 md:h-64 object-contain p-4 md:p-10"
+                src="/sponsors/scalereal.png"
+              />
+              <div className="font-bold my-2 px-2 text-center text-gray-900">
+                Build applications that scale beyond reality
+              </div>
+              <div className="mx-auto self-end mb-2">
                 <a href="https://scalereal.com/" target="_blank">
                   <svg
-                    className="w-6 h-6 inline"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                    />
-                  </svg>
-                </a>
-              </div>
-              {/* <h3>ScaleReal Technologies</h3> */}
-              {/* <div className="mb-2 sm:mx-auto md:mx-0 ">
-                <a href="https://scalereal.com/">
-                  <svg
-                    className="fill-current w-6 h-6 mr-2"
+                    className="fill-current w-4 h-4 mr-2"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
@@ -169,8 +151,89 @@ export default function Support({
                     <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
                   </svg>
                 </a>
-              </div> */}
+              </div>
             </div>
+
+            <div className="rounded overflow-show  shadow-lg bg-white m-3 sponsor-card grid">
+              <img
+                className="mx-auto mt-4 h-24 md:h-64 object-contain p-4 md:p-10"
+                src="/sponsors/appsmith.png"
+              />
+              <div className="font-bold my-2 px-2 text-center text-gray-900">
+                Open source framework to build internal tools
+              </div>
+              <div className="mx-auto self-end mb-2">
+                <a href="https://appsmith.com/" target="_blank">
+                  <svg
+                    className="fill-current w-4 h-4 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* <div className="flex flex-col w-1/3 max-w-md shadow-md my-4">
+              <img className="object-cover p-4" src="/sponsors/scalereal.png" />
+              <div className="flex flex-col sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center justify-items-end">
+                <div className="text-sm text-gray-700">
+                  Build applications that scale beyond reality{" "}
+                </div>
+                <div>
+                  <a href="https://scalereal.com/" target="_blank">
+                    <svg
+                      className="w-6 h-6 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col w-1/3 max-w-md shadow-md my-4">
+              <img
+                className="object-cover p-4 w-9/12"
+                src="/sponsors/appsmith.png"
+              />
+              <div className="flex flex-col sm:text-center md:text-left bg-gray-100 px-5 py-2 items-center">
+                <div className="text-sm text-gray-700">
+                  Appsmith is an open source web framework for building internal
+                  tools, admin panels, dashboards, and workflows.{" "}
+                </div>
+                <div>
+                  <a href="https://appsmith.com/" target="_blank">
+                    <svg
+                      className="w-6 h-6 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div> */}
           </div>
           <Modal info={tiers.sponsor} />
         </div>
@@ -217,10 +280,10 @@ export default function Support({
 }
 
 const filter_function = (patrons, type) => {
-  return patrons.filter(function(elem) {
-      return elem.plan === type
-  })
-}
+  return patrons.filter(function (elem) {
+    return elem.plan === type;
+  });
+};
 
 const asyncFilter = async () => {
   let { data: patrons } = await callingFn();
@@ -230,13 +293,15 @@ const asyncFilter = async () => {
 export async function getStaticProps() {
   try {
     let patrons = await asyncFilter();
-    let {data: [entry]} = await callingAmt();
+    let {
+      data: [entry],
+    } = await callingAmt();
 
     return {
       props: {
         patrons: patrons,
-        revenue: entry.amount
-      }
+        revenue: entry.amount,
+      },
     };
   } catch (error) {
     console.log("Error: ", error);

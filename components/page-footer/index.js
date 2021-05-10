@@ -72,7 +72,7 @@ const PageFooter = () => (
             </li>
             <li>
               🙌&nbsp;&nbsp;Last but not the least, Thank you{" "}
-              <a href="https://remoteindian.com/thanks" target="_blank">
+              <a href="https://remoteindian.com/support" target="_blank">
                 patrons
               </a>{" "}
               for your support!

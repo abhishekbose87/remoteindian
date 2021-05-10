@@ -6,7 +6,7 @@ We have been guilty of that as well. The [anonymous survey](https://docs.google.
   <img src="/guides/risk-taking/money.png" width="50%" alt="A rapper throwing money like it's nothing"/>
 </figure>
 
-This guide is about throwing caution to the wind. It is about understanding the risks before you jump onto the bandwagon. There is certainly a lot of upside in working remotely, but we want to make sure that you take care of the downside.
+This guide is about not throwing caution to the wind. It is about understanding the risks before you jump onto the bandwagon. There is certainly a lot of upside in working remotely, but we want to make sure that you take care of the downside.
 
 > _"In order to succeed, you must first survive."_ - Warren Buffet
 
