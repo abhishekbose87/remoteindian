@@ -15,22 +15,50 @@ import {
   UsersIcon,
 } from "@heroicons/react/solid";
 
+import { Twitter, Linkedin, Mail, Whatsapp } from "react-social-sharing";
+
 /* This example requires Tailwind CSS v2.0+ */
 import { PaperClipIcon } from '@heroicons/react/solid'
 
 import gfm from "remark-gfm";
 
-const JobDetail = ({job: {fields}}) => {
+const JobDetail = ({job: {fields}, encoded_summary}) => {
+
+  let title = `${fields["Job Title"]} @ ${fields["Company name"]}`
+
+  let static_url = `https://remoteindian.com/jobs/${fields["final-slug"]}`
+
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-      <div className="px-4 py-5 sm:px-6">
-        <h3 className="text-lg leading-6 font-medium text-indigo-600">
-          {`${fields["Job Title"]} @ ${fields["Company name"]}`}
-        </h3>
-        <p className="mt-1 max-w-2xl text-sm text-gray-500">
-          {"Posted "}
-          {moment.utc(fields["Created at"]).local().startOf("hour").fromNow()}
-        </p>
+      <div className="px-4 py-5 sm:px-6 flex flex-col md:flex-row justify-between">
+        <div>
+          <h3 className="text-lg leading-6 font-medium text-indigo-600">
+            {`${fields["Job Title"]} @ ${fields["Company name"]}`}
+          </h3>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+            {"Posted "}
+            {moment.utc(fields["Created at"]).local().startOf("hour").fromNow()}
+          </p>
+        </div>
+
+        <div className="mt-3 flex items-center ">
+          <div
+            className="hidden md:block text-lg leading-6"
+            style={{ marginRight: "8px" }}
+          >
+            Share this with a friend 👉
+          </div>
+          <Twitter
+            solid
+            small
+            message={encoded_summary}
+            style={{ marginLeft: "-8px" }}
+            link={static_url}
+          />
+          <Linkedin solid small message={encoded_summary} link={static_url} />
+          <Mail solid small subject={encoded_summary} link={static_url} />
+          <Whatsapp solid small message={encoded_summary} link={static_url} />
+        </div>
       </div>
       <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
         <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
@@ -84,38 +112,38 @@ const JobDetail = ({job: {fields}}) => {
           </div>
 
           {fields["Attachment"] && (
-          <div className="sm:col-span-2">
-            <dt className="text-sm font-medium text-gray-500">Attachments</dt>
-            <dd className="mt-1 text-sm text-gray-900">
-              <ul className="border border-gray-200 rounded-md divide-y divide-gray-200">
-                {fields["Attachment"].map((attachment) => (
-                  <li
-                    key={attachment.id}
-                    className="pl-3 pr-4 py-3 flex items-center justify-between text-sm"
-                  >
-                    <div className="w-0 flex-1 flex items-center">
-                      <PaperClipIcon
-                        className="flex-shrink-0 h-5 w-5 text-gray-400"
-                        aria-hidden="true"
-                      />
-                      <span className="ml-2 flex-1 w-0 truncate">
-                        {attachment.filename}
-                      </span>
-                    </div>
-                    <div className="ml-4 flex-shrink-0">
-                      <a
-                        href={attachment.url}
-                        target="_blank"
-                        className="font-medium text-blue-600 hover:text-blue-500"
-                      >
-                        Download
-                      </a>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </dd>
-          </div>
+            <div className="sm:col-span-2">
+              <dt className="text-sm font-medium text-gray-500">Attachments</dt>
+              <dd className="mt-1 text-sm text-gray-900">
+                <ul className="border border-gray-200 rounded-md divide-y divide-gray-200">
+                  {fields["Attachment"].map((attachment) => (
+                    <li
+                      key={attachment.id}
+                      className="pl-3 pr-4 py-3 flex items-center justify-between text-sm"
+                    >
+                      <div className="w-0 flex-1 flex items-center">
+                        <PaperClipIcon
+                          className="flex-shrink-0 h-5 w-5 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-2 flex-1 w-0 truncate">
+                          {attachment.filename}
+                        </span>
+                      </div>
+                      <div className="ml-4 flex-shrink-0">
+                        <a
+                          href={attachment.url}
+                          target="_blank"
+                          className="font-medium text-blue-600 hover:text-blue-500"
+                        >
+                          Download
+                        </a>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </dd>
+            </div>
           )}
 
           <div className="sm:col-span-2">
@@ -138,6 +166,16 @@ const JobDetail = ({job: {fields}}) => {
 
 const Job = ({job}) => {
 
+  let title = `${job.fields["Job Title"]}`
+  let description = `${moment
+    .utc(job.fields["Created at"])
+    .local()
+    .format("MMM Do YYYY")} - ${job.fields["Company name"]} is hiring ${
+    job.fields["Job Title"]
+  } 🎉 : ${job.fields["Final Location"]}, ${job.fields["full-time"]}, ${
+    job.fields["Category"]
+  }`;
+
   // console.log("Inside React Component:\n", job)
   
   if (!job) {
@@ -146,16 +184,16 @@ const Job = ({job}) => {
 
   return (
     <DefaultLayout>
-      <Helmet
-        title={`${job.fields["Job Title"]} @ ${job.fields["Company name"]}`}
-        description={`${job.fields["Final Location"]}, ${job.fields["full-time"]}, ${job.fields["Category"]}`}
-      />
+      <Helmet title={title} description={description} />
       <Nav />
 
       <div className="pt-5 pb-5 bg-gray-100 border-t">
         <div className="mx-auto max-w-screen-xl">
           <div className="px-10 py-10">
-            <JobDetail job={job} />
+            <JobDetail
+              job={job}
+              encoded_summary={encodeURIComponent(description + "\n\n")}
+            />
           </div>
         </div>
       </div>

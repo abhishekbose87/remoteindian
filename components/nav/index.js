@@ -62,35 +62,41 @@ const Nav = () => {
           </div>
           <div className="hidden md:block md:ml-10">
             <a
-              href="/guides"
+              href="/jobs"
               className="font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
-              Guides
+              💼 Jobs
+            </a>
+            <a
+              href="/guides"
+              className="ml-10 font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
+            >
+              📝 Guides
             </a>
             <a
               href="/interviews"
               className="ml-10 font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
-              Interviews
+              🎙️ Interviews
             </a>
             <a
               href="/tools"
               className="ml-10 font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
-              WFH Tools
+              🛠️ WFH Tools
             </a>
 
             <a
               href="/videos"
               className="ml-10 font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
-              Videos
+              📹 Videos
             </a>
             <a
               href="/support"
               className="ml-10 font-medium text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out"
             >
-              ❤️ Support
+              💰 Support
             </a>
           </div>
         </div>
@@ -160,39 +166,46 @@ const Nav = () => {
             </div>
             <div className="px-2 pt-2 pb-3">
               <a
+                href="/jobs"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                role="menuitem"
+              >
+                💼 Jobs
+              </a>
+              <a
                 href="/guides"
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
-                Guides
+                📝 Guides
               </a>
               <a
                 href="/interviews"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
-                Interviews
+                🎙️ Interviews
               </a>
               <a
                 href="/tools"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
-                WFH Tools
+                🛠️ WFH Tools
               </a>
               <a
                 href="/videos"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
-                Videos
+                📹 Videos
               </a>
               <a
                 href="/support"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
                 role="menuitem"
               >
-                ❤️ Support
+                💰 Support
               </a>
             </div>
             <div>
