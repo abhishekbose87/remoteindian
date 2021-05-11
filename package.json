@@ -42,7 +42,9 @@
     "query-string": "^6.10.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-markdown": "^6.0.2",
     "react-transition-group": "^4.4.1",
+    "remark-gfm": "^1.0.0",
     "sass": "^1.26.8",
     "stripe": "8.56.0",
     "styled-components": "^5.0.0"

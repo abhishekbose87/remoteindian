@@ -26,7 +26,7 @@ const Nav = () => {
   });
 
   return (
-    <div className="relative pt-3 pb-8 sm:pb-12 lg:pb-16">
+    <div className="relative pt-3 pb-3">
       <nav className="relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-24">
         <div className="flex items-center flex-1">
           <div className="flex items-center justify-between w-full md:w-auto">
