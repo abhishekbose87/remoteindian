@@ -7,20 +7,24 @@ const RowBlock = ({
   badge,
   openExternal = false,
   disabled = false,
-  children = null
+  children = null,
 }) => (
-  <ItemWrap className="md:col-span-6 lg:col-span-4 xl:col-span-4">
-    <BlockItem href={ url } disabled={ disabled } target={openExternal ? '_blank' : '_self'}>
-      { !children && (
+  <ItemWrap className="col-span-12 md:col-span-6 lg:col-span-4">
+    <BlockItem
+      href={url}
+      disabled={disabled}
+      target={openExternal ? "_blank" : "_self"}
+    >
+      {!children && (
         <>
           <ItemTitle>
-            { title }
-            { badge && <Badge>{ badge }</Badge>}
+            {title}
+            {badge && <Badge>{badge}</Badge>}
           </ItemTitle>
-          <ItemSubtitle>{ subtitle }</ItemSubtitle>
+          <ItemSubtitle>{subtitle}</ItemSubtitle>
         </>
-      ) }
-      { children }
+      )}
+      {children}
     </BlockItem>
   </ItemWrap>
 );

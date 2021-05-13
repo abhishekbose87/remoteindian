@@ -48,4 +48,5 @@ You can check with friends who are running business - I am sure they will be hav
 If you are part of RI group, and need some quick help then feel free to reach out to CAs in our slack community
 
 1. [Naga S](https://remoteindian.slack.com/team/U0107BAT8UU)
-2. [Rohit Aggarwal](https://remoteindian.slack.com/team/U014CJCNU4W)
+2. [Prasad Bhutada](https://remoteindian.slack.com/team/U01SMUBETCK)
+3. [Rohit Aggarwal](https://remoteindian.slack.com/team/U014CJCNU4W)

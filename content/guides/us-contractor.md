@@ -26,7 +26,7 @@ _Please have a look at the highlighted text of Sec 7 below:_
 
 ## Should I register for GST
 
-You don’t need a GST until you hit a INR 20 lakh receipt threshold. Though there might be a recent rule change wherein this limit got to 40 lakhs and is dependent on which state you reside 🤷‍♂️ 
+You don’t need a GST until you hit a INR 20 lakh receipt threshold.
 
 If you are earning more than that, get money post GST registration and LUT filing only.
 
@@ -47,12 +47,9 @@ _Exchange Earners' Foreign Currency Account (EEFC) is an account maintained in f
 
 More info here -> [https://m.rbi.org.in/Scripts/FAQView.aspx?Id=21](https://m.rbi.org.in/Scripts/FAQView.aspx?Id=21)
 
-
 ## How to manage taxation? Does the company (which I will register) need to do its own taxation and on personal level I'd need to do my own taxation?
 
 Yes, you will be a contractor and need to do your own taxes. They will make you fill a W8BEN form mostly. 
-
-
 
 1. You can pay how much ever tax you need, but you also need to file returns. The max slab of course is 30% if you do not want to show any deductions. This would be the same as any salaried person except your ITR form would be that for a consultant / self employed person and not a salaried person. (There is also a surcharge of 10% for 50L income and 15% over 1Cr)
 2. You would need to pay advance tax 4 times a year
@@ -62,14 +59,9 @@ Unfortunately, this is not trivial — so you would definitely need a CA to do t
 
 More details about Presumptive Taxation - [https://getmoneyrich.com/presumptive-taxation-44ada/](https://getmoneyrich.com/presumptive-taxation-44ada/)
 
-
 ## How do I get paid?
 
 The general consensus on this group has been: 
-
-	
-
-
 
 1. Bank wire transfers are best if your client agrees to it. You should set up an EEFC account. ICICI generally has good conversion rates.
 2. Transferwise is probably the other best option. But the client needs to have an account as well.
