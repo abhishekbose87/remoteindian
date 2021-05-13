@@ -93,20 +93,19 @@ export default function Support({ patrons, revenue }) {
               <h1 className="text-xl font-bold">Goal</h1>
               <div className="mt-4 mb-4">
                 <p>
-                  &#x20B9;{revenue}k of &#x20B9;35k{" "}
+                  &#x20B9;36.7k of &#x20B9;70k{" "}
                   <span className="text-gray-600">per month</span>
                 </p>
                 <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">
                   <div
                     className="bg-red-600 h-full rounded-lg shadow"
-                    style={{ width: "100%" }}
+                    style={{ width: "50%" }}
                   ></div>
                 </div>
               </div>
               <div className="tracking-wide">
-                ✅ Reached Minimum Viable Income of &#x20B9;35k a month 🎉. Now
-                it's time to build a new community space for the community to
-                hangout like GetMakerlog or IndieHackers.
+                Your contribution helps me to work full-time on the RemoteIndian project and keeps the community independent and
+                inclusive for everyone 🤗
               </div>
             </div>
           </div>
@@ -120,10 +119,6 @@ export default function Support({ patrons, revenue }) {
             </svg>
             <div className="">
               <h3>A big Thank You to all our current supporters 🙏</h3>
-              <p>
-                Your contribution keeps the RemoteIndian project independent and
-                inclusive for everyone 🤗
-              </p>
             </div>
           </div>
         </div>
@@ -281,26 +276,22 @@ export default function Support({ patrons, revenue }) {
 
 const filter_function = (patrons, type) => {
   return patrons.filter(function (elem) {
-    return elem.plan === type;
+    return elem.fields.plan_id === type;
   });
 };
 
 const asyncFilter = async () => {
-  let { data: patrons } = await callingFn();
+  let { records: patrons } = await callingFn();
   return patrons;
 };
 
 export async function getStaticProps() {
   try {
     let patrons = await asyncFilter();
-    let {
-      data: [entry],
-    } = await callingAmt();
 
     return {
       props: {
-        patrons: patrons,
-        revenue: entry.amount,
+        patrons: patrons
       },
     };
   } catch (error) {
@@ -308,29 +299,10 @@ export async function getStaticProps() {
   }
 }
 
-async function callingAmt() {
-  try {
-    const response = await fetch(
-      "https://v1.nocodeapi.com/avi/google_sheets/xesNowmVMxwrhxnD?tabId=Amount",
-      {
-        method: "get",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
-    const json = await response.json();
-    // console.log("Success:", JSON.stringify(json));
-    return json;
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}
-
 async function callingFn() {
   try {
     const response = await fetch(
-      "https://v1.nocodeapi.com/avi/google_sheets/xesNowmVMxwrhxnD?tabId=DB",
+      "https://v1.nocodeapi.com/avi/airtable/TYxyUmEPMhLuTihu?tableName=Database&view=NoCodeAPI",
       {
         method: "get",
         headers: {
@@ -345,5 +317,3 @@ async function callingFn() {
     console.error("Error:", error);
   }
 }
-
-callingFn();

@@ -8,17 +8,17 @@ const SupporterSection = ({title, patrons, tier}) => {
           {patrons.map((supporter) => (
             <div
               className="rounded overflow-show  shadow-lg bg-white m-3 supporter-card grid"
-              key={supporter.row_id}
+              key={supporter.id}
             >
               <img
                 className="rounded-full mx-auto mt-4 w-4/5 h-1/2"
-                src={supporter.image_url}
+                src={supporter.fields.profile_image[0].url}
               />
               <div className="font-bold my-2 px-2 text-center text-gray-900">
-                {supporter.name}
+                {supporter.fields.name}
               </div>
               <div className="mx-auto self-end mb-2">
-                <a href={supporter.link} target="_blank">
+                <a href={supporter.fields.url} target="_blank">
                   <svg
                     className="fill-current w-4 h-4 mr-2"
                     xmlns="http://www.w3.org/2000/svg"
