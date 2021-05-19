@@ -93,7 +93,7 @@ export default function Support({ patrons, revenue }) {
               <h1 className="text-xl font-bold">Goal</h1>
               <div className="mt-4 mb-4">
                 <p>
-                  &#x20B9;36.7k of &#x20B9;70k{" "}
+                  &#x20B9;37.4k of &#x20B9;70k{" "}
                   <span className="text-gray-600">per month</span>
                 </p>
                 <div className="bg-gray-400 w:30 md:w-64 h-3 rounded-lg mt-2">

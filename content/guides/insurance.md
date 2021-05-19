@@ -54,7 +54,7 @@ Or you can go with a home insurance where your electronics are covered as well. 
 
 ## Investigate further
 
-#### [RI AMA with Ruchir](https://otter.ai/note/22SRBNVTY6KFTA7R?f=) 
+#### [RI AMA with Ruchir](https://otter.ai/u/tbq_JMRw4mv9HL19IymKRci9JgA)
 
 Ruchir answered the below questions in this session.
 

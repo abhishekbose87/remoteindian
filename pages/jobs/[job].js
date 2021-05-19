@@ -40,25 +40,6 @@ const JobDetail = ({job: {fields}, encoded_summary}) => {
             {moment.utc(fields["Created at"]).local().startOf("hour").fromNow()}
           </p>
         </div>
-
-        <div className="mt-3 flex items-center ">
-          <div
-            className="hidden md:block text-lg leading-6"
-            style={{ marginRight: "8px" }}
-          >
-            Share this with a friend 👉
-          </div>
-          <Twitter
-            solid
-            small
-            message={encoded_summary}
-            style={{ marginLeft: "-8px" }}
-            link={static_url}
-          />
-          <Linkedin solid small message={encoded_summary} link={static_url} />
-          <Mail solid small subject={encoded_summary} link={static_url} />
-          <Whatsapp solid small message={encoded_summary} link={static_url} />
-        </div>
       </div>
       <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
         <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
@@ -158,6 +139,26 @@ const JobDetail = ({job: {fields}, encoded_summary}) => {
             </button>
           </div>
         </dl>
+      </div>
+      <div className="border-t border-gray-200 px-4 py-2 sm:px-6 flex flex-col md:flex-row justify-between">
+        <div className="flex items-center ">
+          <div
+            className="hidden md:block text-lg leading-6"
+            style={{ marginRight: "8px" }}
+          >
+            Share this with a friend 👉
+          </div>
+          <Twitter
+            solid
+            small
+            message={encoded_summary}
+            style={{ marginLeft: "-8px" }}
+            link={static_url}
+          />
+          <Linkedin solid small message={encoded_summary} link={static_url} />
+          <Mail solid small subject={encoded_summary} link={static_url} />
+          <Whatsapp solid small message={encoded_summary} link={static_url} />
+        </div>
       </div>
     </div>
   );
