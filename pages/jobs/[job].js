@@ -159,6 +159,13 @@ const JobDetail = ({job: {fields}, encoded_summary}) => {
           <Mail solid small subject={encoded_summary} link={static_url} />
           <Whatsapp solid small message={encoded_summary} link={static_url} />
         </div>
+        <div className="flex items-center py-4">
+          <div className="text-sm">
+            <a href="https://airtable.com/shrWN4JNoN6PIfXZ5">
+              📍 Report this listing
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
