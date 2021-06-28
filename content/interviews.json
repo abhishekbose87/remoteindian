@@ -11,6 +11,18 @@
     "createdAt": "2018-03-23"
   },
   {
+    "image": "/interviews/sheeba/sheeba.jpeg",
+    "og_image": "/interviews/sheeba/sheeba-toon.jpg",
+    "title": "Sheeba",
+    "description": "Read why and how Sheeba began her freelancing journey after one of her appraisals.",
+    "url": "/interviews/sheeba",
+    "fileName": "sheeba",
+    "featured": true,
+    "author": "hari",
+    "updatedAt": "2021-06-28",
+    "createdAt": "2021-06-28"
+  },
+  {
     "image": "/interviews/mayur_sontakke.jpg",
     "title": "Mayur Sontakke",
     "description": "Mayur gets to work remotely even though he is from finance domain. Also know how a remote job has made him a World Citizen",
@@ -38,7 +50,7 @@
     "description": "Prathamesh works remotely in India as a rubyist.",
     "url": "/interviews/prathamesh-sonpatki",
     "fileName": "prathamesh-sonpatki",
-    "featured": true,
+    "featured": false,
     "author": "avi87",
     "updatedAt": "2018-07-07",
     "createdAt": "2018-07-07"

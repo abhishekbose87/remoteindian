@@ -18,6 +18,7 @@ const Interview = ({ guide, canonical }) => {
       <Helmet
         title={ guide.title }
         description={ guide.description }
+        og_image = {guide.og_image}
         canonical={ guide.canonical || canonical }
       />
       <GuideHeader guide={ guide } />

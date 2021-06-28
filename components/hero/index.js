@@ -33,7 +33,7 @@ const Hero = () => (
             </svg>
           </div>
           <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl text-left">
-            1200+ Members
+            2,000+ Members
           </div>
         </div>
 
@@ -57,7 +57,7 @@ const Hero = () => (
             </svg>
           </div>
           <div className="col-span-11 text-base text-gray-700 sm:text-xl lg:text-lg xl:text-xl text-left">
-            5000+ Messages exchanged monthly
+            10,000+ Messages exchanged monthly
           </div>
         </div>
 
