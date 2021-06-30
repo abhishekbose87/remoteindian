@@ -23,7 +23,7 @@ const PageTitle = "RI Jobs";
 const PageDescription = `Find relevant listings so that it's easy to find your dream remote job even when you are based in India 🇮🇳`;
 
 /* This example requires Tailwind CSS v2.0+ */
-import { CalendarIcon, LocationMarkerIcon, UsersIcon } from '@heroicons/react/solid'
+import { CalendarIcon, LocationMarkerIcon, UsersIcon, CashIcon, AcademicCapIcon } from '@heroicons/react/solid'
 
 // const positions = [
 //   {
@@ -141,6 +141,24 @@ const JobsTable = ({jobs}) => {
                       />
                       {position.fields["Final Location"]}
                     </p>
+                    {position.fields["Experience new"] && (
+                      <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                        <AcademicCapIcon
+                          className="flex-shrink-0 mr-1 h-5 w-5 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        {position.fields["Experience new"]}
+                      </p>
+                    )}
+                    {position.fields["Salary range"] && (
+                      <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                        <CashIcon
+                          className="flex-shrink-0 mr-1 h-5 w-5 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        {position.fields["Salary range"]}
+                      </p>
+                    )}
                   </div>
                   <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
                     <CalendarIcon
